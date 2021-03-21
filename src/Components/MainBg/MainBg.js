@@ -5,9 +5,7 @@ const MainBg = (props) => {
 
   return (
     <div className={classes.root}>
-      {/* <div className={classes.rect} />   */}
       <div className={classes.container}>{props.children}</div>
-      
     </div>
   );
 };

@@ -5,14 +5,15 @@ const useStyles = makeStyles((theme) => ({
     width: "100vw",
     height: "100vh",
     background: theme.palette.primary.main,
-
+    overflow:"hidden",
     position: "relative",
     "&:before": {
       content: "''",
       position: "absolute",
       top: -260,
       left: 0,
-      height: "100vh",
+      minHeight: "100vh",
+      minHeight: "-webkit-fill-available",
       background: "white",
       transform: "rotate(45deg)",
       width: 600,
