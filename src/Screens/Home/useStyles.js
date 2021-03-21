@@ -5,6 +5,9 @@ root:{
     display:"grid",
     gridTemplateColumns: "1fr 1fr",
     height:"100%",
+    [theme.breakpoints.down('sm')]:{
+        gridTemplateColumns: "1fr",
+    }
 },
 imgWrapper:{
     height:"100%",
