@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Routes from "./Routes";
+import theme from "src/Theme/Theme";
+import { ThemeProvider } from "@material-ui/styles";
+import { connect } from "react-redux";
+import ColorBar from "./Components/ColorBar/ColorBar";
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ThemeProvider
+        theme={{
+          ...theme,
+          palette: {
+            ...theme.palette,
+            primary: { main: props.color ? props.color : "rgb(50,50,50)" },
+          },
+        }}
+      >
+        <Routes />
+        <ColorBar/>
+      </ThemeProvider>
+    </>
   );
 }
 
-export default App;
+const mapState = (state) => ({
+  color: state.theme.color,
+});
+
+export default connect(mapState)(App);
