@@ -8,12 +8,48 @@ import { closeMenu, openMenu } from "src/Redux/menu/menuReducer";
 import CloseRoundedIcon from "@material-ui/icons/CloseRounded";
 import { motion } from "framer-motion";
 
+const items = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
+
+const colors = [
+  "#F44336",
+  "#FF4081",
+  "#FF5722",
+  "#009688",
+  "#4CAF50",
+  "#00BCD4",
+  "#2196F3",
+  "#9C27B0",
+  "#3F51B5",
+];
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+};
 const ColorBar = ({ setTheme, menu, openMenu, closeMenu }) => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <div className={classes.colorMenu}>
+    <motion.div variants={container}
+    initial="hidden"
+    animate="visible"
+    className={classes.root}>
+      <motion.div
+        
+        className={classes.colorMenu}
+      >
         <motion.div
           whileTap={{
             scale: 0.8,
@@ -37,53 +73,17 @@ const ColorBar = ({ setTheme, menu, openMenu, closeMenu }) => {
             </IconButton>
           )}
         </motion.div>
-      </div>
-      <div
-        className={classes.color}
-        style={{ background: "#F44336" }}
-        onClick={() => setTheme("#F44336")}
-      />
-      <div
-        className={classes.color}
-        style={{ background: "#FF4081" }}
-        onClick={() => setTheme("#FF4081")}
-      />
-      <div
-        className={classes.color}
-        style={{ background: "#FF5722" }}
-        onClick={() => setTheme("#FF5722")}
-      />
-      <div
-        className={classes.color}
-        style={{ background: "#009688" }}
-        onClick={() => setTheme("#009688")}
-      />
-      <div
-        className={classes.color}
-        style={{ background: "#4CAF50" }}
-        onClick={() => setTheme("#4CAF50")}
-      />
-      <div
-        className={classes.color}
-        style={{ background: "#00BCD4" }}
-        onClick={() => setTheme("#00BCD4")}
-      />
-      <div
-        className={classes.color}
-        style={{ background: "#2196F3" }}
-        onClick={() => setTheme("#2196F3")}
-      />
-      <div
-        className={classes.color}
-        style={{ background: "#9C27B0" }}
-        onClick={() => setTheme("#9C27B0")}
-      />
-      <div
-        className={classes.color}
-        style={{ background: "#3F51B5" }}
-        onClick={() => setTheme("#3F51B5")}
-      />
-    </div>
+      </motion.div>
+      {colors.map((item, index) => (
+        <motion.div
+          variants={items}
+          key={index}
+          className={classes.color}
+          style={{ background: item }}
+          onClick={() => setTheme(item)}
+        />
+      ))}
+    </motion.div>
   );
 };
 
