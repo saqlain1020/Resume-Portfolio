@@ -67,7 +67,7 @@ const ColorBar = ({ setTheme, menu, openMenu, closeMenu }) => {
               <MenuRoundedIcon color="inherit" />
             </IconButton>
           ) : (
-            <IconButton onClick={closeMenu}>
+            <IconButton onClick={closeMenu} color="inherit">
               <CloseRoundedIcon />
             </IconButton>
           )}

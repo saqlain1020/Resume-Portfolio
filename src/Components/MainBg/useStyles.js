@@ -13,7 +13,6 @@ const useStyles = makeStyles((theme) => ({
       top: -260,
       left: 0,
       minHeight: "100vh",
-      minHeight: "-webkit-fill-available",
       background: "white",
       transform: "rotate(45deg)",
       width: 600,

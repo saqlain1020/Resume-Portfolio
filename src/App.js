@@ -19,7 +19,7 @@ function App(props) {
         }}
       >
         <Routes />
-        <ColorBar/>
+        <ColorBar />
       </ThemeProvider>
     </>
   );

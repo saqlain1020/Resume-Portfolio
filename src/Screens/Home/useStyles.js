@@ -14,5 +14,10 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     width: "100%",
   },
+  content: {
+    alignItems: "flex-start",
+    flexFlow: "column",
+    padding: 20,
+  },
 }));
 export default useStyles;
