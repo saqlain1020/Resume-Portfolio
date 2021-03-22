@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     transition: "all 300ms ease-out",
     boxShadow: "0px 0px 10px rgba(0,0,0,0.3)",
     background: theme.palette.primary.main,
-    
+    color: "white",
   },
 }));
 

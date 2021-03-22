@@ -42,14 +42,13 @@ const ColorBar = ({ setTheme, menu, openMenu, closeMenu }) => {
   const classes = useStyles();
 
   return (
-    <motion.div variants={container}
-    initial="hidden"
-    animate="visible"
-    className={classes.root}>
-      <motion.div
-        
-        className={classes.colorMenu}
-      >
+    <motion.div
+      variants={container}
+      initial="hidden"
+      animate="visible"
+      className={classes.root}
+    >
+      <motion.div className={classes.colorMenu}>
         <motion.div
           whileTap={{
             scale: 0.8,
@@ -64,8 +63,8 @@ const ColorBar = ({ setTheme, menu, openMenu, closeMenu }) => {
           }}
         >
           {!menu ? (
-            <IconButton onClick={openMenu}>
-              <MenuRoundedIcon />
+            <IconButton onClick={openMenu} color="inherit">
+              <MenuRoundedIcon color="inherit" />
             </IconButton>
           ) : (
             <IconButton onClick={closeMenu}>
