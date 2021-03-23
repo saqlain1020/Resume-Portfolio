@@ -4,9 +4,9 @@ import useStyles from "./useStyles";
 import { setTheme } from "src/Redux/theme/themeActions";
 import { IconButton } from "@material-ui/core";
 import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
-import { closeMenu, openMenu } from "src/Redux/menu/menuReducer";
 import CloseRoundedIcon from "@material-ui/icons/CloseRounded";
 import { motion } from "framer-motion";
+import { withRouter } from "react-router";
 
 const items = {
   hidden: { y: 20, opacity: 0 },
@@ -38,8 +38,19 @@ const container = {
     },
   },
 };
-const ColorBar = ({ setTheme, menu, openMenu, closeMenu }) => {
+const ColorBar = ({ setTheme, ...restProps }) => {
   const classes = useStyles();
+  const [open,setOpen] = React.useState(false);
+  
+  const handleOpen = ()=>{
+    setOpen(true);
+    restProps.history.push("/menu");
+  }
+
+  const handleClose = ()=>{
+    setOpen(false);
+    restProps.history.push("/");
+  }
 
   return (
     <motion.div
@@ -62,12 +73,12 @@ const ColorBar = ({ setTheme, menu, openMenu, closeMenu }) => {
             damping: 20,
           }}
         >
-          {!menu ? (
-            <IconButton onClick={openMenu} color="inherit">
+          {!open ? (
+            <IconButton onClick={handleOpen} color="inherit">
               <MenuRoundedIcon color="inherit" />
             </IconButton>
           ) : (
-            <IconButton onClick={closeMenu} color="inherit">
+            <IconButton onClick={handleClose} color="inherit">
               <CloseRoundedIcon />
             </IconButton>
           )}
@@ -86,14 +97,9 @@ const ColorBar = ({ setTheme, menu, openMenu, closeMenu }) => {
   );
 };
 
-const mapState = (state) => ({
-  menu: state.menu,
-});
 
 const actions = {
   setTheme,
-  openMenu,
-  closeMenu,
 };
 
-export default connect(mapState, actions)(ColorBar);
+export default connect(null, actions)(withRouter(ColorBar));
