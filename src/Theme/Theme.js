@@ -23,6 +23,9 @@ const theme = createMuiTheme({
       h3: {
         color: "#333333",
       },
+      h4: {
+        color: "#333333",
+      },
     },
   },
 });

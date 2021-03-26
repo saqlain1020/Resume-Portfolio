@@ -40,17 +40,21 @@ const container = {
 };
 const ColorBar = ({ setTheme, ...restProps }) => {
   const classes = useStyles();
-  const [open,setOpen] = React.useState(false);
-  
-  const handleOpen = ()=>{
+  const [open, setOpen] = React.useState(false);
+
+  React.useEffect(() => {
+    if (!restProps.location.pathname.includes("menu")) setOpen(false);
+  }, [restProps.location]);
+
+  const handleOpen = () => {
     setOpen(true);
     restProps.history.push("/menu");
-  }
+  };
 
-  const handleClose = ()=>{
+  const handleClose = () => {
     setOpen(false);
     restProps.history.push("/");
-  }
+  };
 
   return (
     <motion.div
@@ -96,7 +100,6 @@ const ColorBar = ({ setTheme, ...restProps }) => {
     </motion.div>
   );
 };
-
 
 const actions = {
   setTheme,

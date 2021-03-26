@@ -7,6 +7,7 @@ import CvSvg from "src/Assets/Icons/approved.svg";
 import ManSvg from "src/Assets/Icons/man.svg";
 import PortfolioSvg from "src/Assets/Icons/portfolio.svg";
 import ContactSvg from "src/Assets/Icons/identification.svg";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -81,7 +82,9 @@ const Menu = () => {
       >
         {menuArray.map((item, index) => (
           <motion.div key={index} variants={items}>
-            <MenuCard title={item.title} icon={item.icon} />
+            <Link to={item.title.toLowerCase()}>
+              <MenuCard title={item.title} icon={item.icon} />
+            </Link>
           </motion.div>
         ))}
       </motion.div>
