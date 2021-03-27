@@ -30,6 +30,12 @@ const theme = createMuiTheme({
         color: "#333333",
       },
     },
+    MuiLinearProgress:{
+      root: {
+        height:10,
+        boxShadow: "0px 1px 5px rgba(0,0,0,0.3)"
+      }
+    }
   },
 });
 

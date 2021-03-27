@@ -6,8 +6,12 @@ import { ThemeProvider } from "@material-ui/styles";
 import { connect } from "react-redux";
 import ColorBar from "./Components/ColorBar/ColorBar";
 import { Container } from "@material-ui/core";
+import {useWindowSize} from 'src/Hooks/Hooks'
 
 function App(props) {
+
+  const size = useWindowSize()
+
   return (
     <>
       <ThemeProvider
@@ -19,7 +23,7 @@ function App(props) {
           },
         }}
       >
-        <Container maxWidth="xl" disableGutters style={{position:"relative",maxHeight:1080,height:"100vh"}}>
+        <Container maxWidth="xl" disableGutters style={{position:"relative",maxHeight:1080,height:size.height}}>
         <Routes />
         <ColorBar />
         </Container>
