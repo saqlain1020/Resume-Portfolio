@@ -1,6 +1,7 @@
 import React from "react";
 import { Divider, Grid, makeStyles, Typography } from "@material-ui/core";
 import useStyles from "./useStyles";
+import ServiceCard from "src/Components/ServiceCard/ServiceCard";
 
 const About = () => {
   const classes = useStyles();
@@ -57,7 +58,11 @@ const About = () => {
       <Typography color="primary" style={{ marginTop: 5 }}>
         I provide amazing and high quality services
       </Typography>
-      <div className={classes.servicesGrid}></div>
+      <div className={classes.servicesGrid}>
+        <ServiceCard/>
+        <ServiceCard/>
+        <ServiceCard/>
+      </div>
     </div>
   );
 };

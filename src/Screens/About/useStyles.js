@@ -26,6 +26,10 @@ const useStyles = makeStyles((theme) => ({
       marginTop: 0,
     },
   },
-  servicesGrid: {},
+  servicesGrid: {
+    marginTop:20,
+    display:"grid",
+    gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))",
+  },
 }));
 export default useStyles;

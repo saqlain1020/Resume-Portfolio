@@ -5,6 +5,7 @@ import theme from "src/Theme/Theme";
 import { ThemeProvider } from "@material-ui/styles";
 import { connect } from "react-redux";
 import ColorBar from "./Components/ColorBar/ColorBar";
+import { Container } from "@material-ui/core";
 
 function App(props) {
   return (
@@ -18,8 +19,10 @@ function App(props) {
           },
         }}
       >
+        <Container maxWidth="xl" disableGutters style={{position:"relative",maxHeight:1080,height:"100vh"}}>
         <Routes />
         <ColorBar />
+        </Container>
       </ThemeProvider>
     </>
   );

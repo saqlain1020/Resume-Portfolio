@@ -25,6 +25,9 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: "wrap",
     justifyContent: "center",
     alignItems: "center",
+    [theme.breakpoints.down('xs')]:{
+      height:"100%",
+    }
   },
 }));
 

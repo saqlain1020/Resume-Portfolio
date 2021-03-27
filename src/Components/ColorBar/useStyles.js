@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
     position: "absolute",
-    height: "100vh",
+    height: "100%",
     width: "auto",
     top: 0,
     left: 0,
