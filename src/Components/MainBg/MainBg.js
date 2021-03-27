@@ -5,7 +5,9 @@ const MainBg = (props) => {
 
   return (
     <div className={classes.root}>
-      <div className={classes.container}>{props.children}</div>
+      <div className={classes.container}>
+        <div className={classes.scrollWrapper}>{props.children}</div>
+      </div>
     </div>
   );
 };

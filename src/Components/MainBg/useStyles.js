@@ -5,21 +5,21 @@ const useStyles = makeStyles((theme) => ({
     // width: "100vw",
     height: "100%",
     background: theme.palette.primary.main,
-    overflow:"hidden",
+    overflow: "hidden",
     position: "relative",
     "&:before": {
       content: "''",
       position: "absolute",
       top: -260,
       left: 0,
-      minHeight: "100vh",
+      minHeight: "100%",
       background: "white",
       transform: "rotate(45deg)",
       width: 600,
       zIndex: 0,
-      [theme.breakpoints.down('xs')]:{
-        display:"none",
-      }
+      [theme.breakpoints.down("xs")]: {
+        display: "none",
+      },
     },
   },
   container: {
@@ -31,7 +31,8 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "0px 0px 60px rgb(0,0,0,0.18)",
     zIndex: 55,
     position: "absolute",
-    overflowY:"auto",
+    padding: 3,
+
     [theme.breakpoints.down("sm")]: {
       width: "calc(100% - 80px)",
       height: "calc(100% - 80px)",
@@ -44,29 +45,32 @@ const useStyles = makeStyles((theme) => ({
       top: 5,
       left: 5,
     },
-    "&::-webkit-scrollbar":{
-      width:5,
-      height:5,
-      paddingRight:2,
-      marginRight:2,
-      transform: "translateX(-10px)"
-    },
-    "&::-webkit-scrollbar-track":{
+  },
+  scrollWrapper: {
+    overflowY: "auto",
+    height: "100%",
+    "&::-webkit-scrollbar": {
+      width: 5,
+      height: 5,
+      paddingRight: 2,
       marginRight: 2,
-      paddingRight:2,
-      transform: "translateX(-10px)"
+      transform: "translateX(-10px)",
     },
-    "&::-webkit-scrollbar-thumb":{
+    "&::-webkit-scrollbar-track": {
+      marginRight: 2,
+      paddingRight: 2,
+      transform: "translateX(-10px)",
+    },
+    "&::-webkit-scrollbar-thumb": {
       background: "rgba(0,0,0,0.3)",
-      
+
       borderRadius: 360,
       marginRight: 2,
-      "&:hover":{
+      "&:hover": {
         background: theme.palette.primary.main,
-      }
+      },
     },
   },
-  
 }));
 
 export default useStyles;
