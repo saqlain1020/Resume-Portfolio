@@ -48,6 +48,7 @@ const useStyles = makeStyles((theme) => ({
   },
   scrollWrapper: {
     overflowY: "auto",
+    overflowX: "hidden",
     height: "100%",
     "&::-webkit-scrollbar": {
       width: 5,
