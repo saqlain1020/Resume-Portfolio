@@ -18,7 +18,7 @@ const CustomProgressBar = ({ title, value }) => {
   return (
     <>
       <Typography className={classes.progressTitle}>{title}</Typography>
-      <LinearProgress variant="determinate" value={countUp} />
+      <LinearProgress variant="determinate" value={Number(countUp)} />
     </>
   );
 };
