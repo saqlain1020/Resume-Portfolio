@@ -3,12 +3,17 @@ import { Divider, Grid, Typography } from "@material-ui/core";
 import useStyles from "./useStyles";
 import ServiceCard from "src/Components/ServiceCard/ServiceCard";
 import MySkills from "src/Components/MySkills/MySkills";
+import { motion } from "framer-motion";
 
 const About = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <motion.div
+      className={classes.root}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
       <Typography variant="h4">
         <b>ABOUT ME</b>
       </Typography>
@@ -64,8 +69,8 @@ const About = () => {
         <ServiceCard />
         <ServiceCard />
       </div>
-      <MySkills/>
-    </div>
+      <MySkills />
+    </motion.div>
   );
 };
 

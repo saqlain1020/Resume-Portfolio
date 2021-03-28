@@ -132,7 +132,7 @@ const ContactForm = () => {
         <Grid item xs={12}>
           <center>
             <MyButton variant="contained" className={classes.btn} type="submit">
-              Submit
+              SUBMIT
             </MyButton>
           </center>
         </Grid>

@@ -4,6 +4,7 @@ import PhoneIcon from "@material-ui/icons/Phone";
 import MailIcon from "@material-ui/icons/Mail";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LanguageIcon from "@material-ui/icons/Language";
+import { motion } from "framer-motion";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,37 +32,60 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 20,
   },
 }));
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+};
 
+const items = {
+  hidden: { y: 10, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
 const ContactIcons = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <div className={`flex ${classes.item}`}>
+    <motion.div
+      variants={container}
+      initial="hidden"
+      animate="visible"
+      className={classes.root}
+    >
+      <motion.div variants={items} className={`flex ${classes.item}`}>
         <a href="https://github.com/saqlain1020">
           <GitHubIcon className={classes.icon} />
         </a>
         <Typography>github.com/saqlain1020</Typography>
-      </div>
-      <div className={`flex ${classes.item}`}>
+      </motion.div>
+      <motion.div variants={items} className={`flex ${classes.item}`}>
         <a href="tel:+923000580479">
           <PhoneIcon className={classes.icon} />
         </a>
         <Typography>+92 300 0580479</Typography>
-      </div>
-      <div className={`flex ${classes.item}`}>
+      </motion.div>
+      <motion.div variants={items} className={`flex ${classes.item}`}>
         <a href="mailto:saqlainprinters@gmail.com">
           <MailIcon className={classes.icon} />
         </a>
         <Typography>saqlainprinters@gmail.com</Typography>
-      </div>
-      <div className={`flex ${classes.item}`}>
+      </motion.div>
+      <motion.div variants={items} className={`flex ${classes.item}`}>
         <a href="https://saq1020.netlify.app">
           <LanguageIcon className={classes.icon} />
         </a>
         <Typography>saqlain1020.netlify.app</Typography>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

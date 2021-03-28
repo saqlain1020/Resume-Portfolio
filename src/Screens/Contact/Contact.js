@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles, Typography } from "@material-ui/core";
 import ContactForm from "src/Components/ContactForm/ContactForm";
 import ContactIcons from "src/Components/ContactIcons/ContactIcons";
+import { motion } from "framer-motion";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,7 +29,11 @@ const Contact = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <motion.div
+      className={classes.root}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
       <Typography variant="h4">
         <b>CONTACT ME</b>
       </Typography>
@@ -43,7 +48,7 @@ const Contact = () => {
           <ContactIcons />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

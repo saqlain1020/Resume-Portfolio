@@ -3,6 +3,8 @@ import { makeStyles, Typography } from "@material-ui/core";
 import ResumeCard from "src/Components/ResumeCard/ResumeCard";
 import CustomCarousel from "src/Components/CustomCarousel/CustomCarousel";
 import TestimonialCard from "src/Components/TestimonialCard/TestimonialCard";
+import { motion } from "framer-motion";
+import Fade from "react-reveal/Fade";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,7 +43,11 @@ const Resume = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <motion.div
+      className={classes.root}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
       <Typography variant="h4">
         <b>MY EDUCATION</b>
       </Typography>
@@ -60,9 +66,11 @@ const Resume = () => {
         Take a look at the places where I've worked
       </Typography>
       <div className={classes.resumeCardsContainer}>
-        {education.map((ele, index) => (
-          <ResumeCard key={index} {...ele} />
-        ))}
+        <Fade bottom>
+          {education.map((ele, index) => (
+            <ResumeCard key={index} {...ele} />
+          ))}
+        </Fade>
       </div>
       <Typography variant="h4" style={{ marginTop: 30 }}>
         <b>Testimonials</b>
@@ -75,7 +83,7 @@ const Resume = () => {
           <TestimonialCard key={index} {...ele} />
         ))}
       </CustomCarousel>
-    </div>
+    </motion.div>
   );
 };
 
