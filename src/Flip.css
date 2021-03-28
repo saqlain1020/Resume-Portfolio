@@ -7,10 +7,10 @@
   width: 140px;
   position: relative;
   transform-style: preserve-3d;
-  /* animation: flipOp 1s 1 forwards;  initial animate */
+  animation: flipOp 900ms 1 forwards;
 }
 .flip-container:hover .flip-card {
-  animation: flip 1s 1 forwards;
+  animation: flip 900ms 1 forwards;
 }
 .flip-container:hover .flip-card .flip-content {
   /* animation: flipContent 1s 1 forwards; */

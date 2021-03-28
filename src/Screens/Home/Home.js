@@ -8,6 +8,7 @@ import { Grid, Typography } from "@material-ui/core";
 import ImageFade from "src/Components/ImageFade/ImageFade";
 import MyButton from "src/Components/MyButton/MyButton";
 import { Link } from "react-router-dom";
+import CVLink from "src/Assets/Saqlain_CV.pdf";
 
 const Home = () => {
   const classes = useStyles();
@@ -23,12 +24,15 @@ const Home = () => {
           <b>I'M SAQLAIN</b>
         </Typography>
         <Typography color="primary" style={{ marginTop: 5 }}>
-          A friend, buddy and dude from earth
+          Hire the right talent and everything takes care of itself.
         </Typography>
-        <Typography style={{ marginTop: 40, fontWeight: 500 }}>
-          Euismod consulatu eos eu. Vocent facilis sensibus vel ut, quo an nihil
-          qualisque.
-          <br /> Mea eu nulla prompta. Dicat velit at usum, malis euismod vim an
+        <Typography className={classes.para}>
+          I'm an experienced developer working on React JS.
+          <br />
+          Proficient in utilizing modern web techniques and technologies in
+          transforming your ideas to a beautiful web interface.
+          <br />
+          Always working hard with ambitions which lead to higher grounds.
         </Typography>
         <Grid container spacing={2} style={{ marginTop: 20 }}>
           <Grid item>
@@ -37,7 +41,9 @@ const Home = () => {
             </Link>
           </Grid>
           <Grid item>
-            <MyButton variant="outlined">DOWNLOAD RESUME</MyButton>
+            <a href={CVLink} download="Saqlain_CV.pdf">
+              <MyButton variant="outlined">DOWNLOAD RESUME</MyButton>
+            </a>
           </Grid>
         </Grid>
       </div>

@@ -19,5 +19,10 @@ const useStyles = makeStyles((theme) => ({
     flexFlow: "column",
     padding: 20,
   },
+  para: {
+    marginTop: 40,
+    fontWeight: 500,
+    maxWidth: 600,
+  },
 }));
 export default useStyles;

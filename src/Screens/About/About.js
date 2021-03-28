@@ -18,17 +18,17 @@ const About = () => {
         <b>ABOUT ME</b>
       </Typography>
       <Typography color="primary" style={{ marginTop: 5 }}>
-        I'm a good guy, not a bad guy
+        I'm a dude with experience
       </Typography>
       <Grid container spacing={6} className={classes.nameContainers}>
         <Grid item xs={12} md={4}>
           <div>
             <Typography className={classes.aboutText}>
-              <b>NAME:</b> John Doe
+              <b>NAME:</b> Saqlain Riaz
             </Typography>
             <Divider />
             <Typography className={classes.aboutText}>
-              <b>JOB:</b> Freelancer
+              <b>JOB:</b> React Developer
             </Typography>
             <Divider />
             <Typography className={classes.aboutText}>
@@ -36,25 +36,21 @@ const About = () => {
             </Typography>
             <Divider />
             <Typography className={classes.aboutText}>
-              <b>HOMETOWN:</b> Dokri
+              <b>HOMETOWN:</b> Karachi
             </Typography>
             <Divider />
           </div>
         </Grid>
         <Grid item xs={12} md={8}>
           <Typography className={classes.aboutPara}>
-            Consul latine iudicabit eu vel. Cu has animal eru volupta tibus. Eu
-            volumus explicari sed. Mel mutat vitupata susci piantur et, et
-            fabellas explicari adipiscing quo. No dol em blandit theophrastus
-            eos, nam eu per secuti repu dadae, duo hinc vide aliquip et. An has
-            alterum nominavi. Nam at elitr veritus voluptaria. Cu eum regione
-            tacimates vituperatoribus
+            I’m Saqlain an ambitious problem solver with a passion for learning
+            and implementing new solutions, and who like to be in party of
+            like-minded developers. Experienced in creating logical and
+            innovative solutions to complex problems.
             <br />
             <br />
-            Consul latine iudicabit eu vel. Cu has animal eru volupta tibus. Eu
-            volumus explicari sed. Mel mutat vitupata susci piantur et, et
-            fabellas explicari adipiscing quo. No dol em blandit theophrastus
-            eos, nam eu per secuti repu dadae, duo hinc vide aliquip et. vim an
+            My goal is to climb the ladder and become one of the leading experts
+            in my field, who want's to be a part of something bigger.
           </Typography>
         </Grid>
       </Grid>
