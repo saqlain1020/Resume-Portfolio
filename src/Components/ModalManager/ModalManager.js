@@ -53,7 +53,6 @@ const ModalManager = ({ open, close, ...props }) => {
     >
       <CloseIcon
         className={classes.closeIcon}
-        fontSize="medium"
         onClick={close}
       />
 
