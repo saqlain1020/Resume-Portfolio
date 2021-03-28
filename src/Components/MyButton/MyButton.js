@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
     cursor: "pointer",
     transition: "box-shadow 300ms",
     userSelect: "none",
+    outline: "none",
     "&:hover": {
       boxShadow: "0px 3px 15px rgba(0,0,0,0.3)",
     },
@@ -28,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
     cursor: "pointer",
     transition: "border 300ms",
     userSelect: "none",
+    outline: "none",
     border: `3px solid transparent`,
     "&:hover": {
       border: `3px solid ${theme.palette.primary.main}`,
@@ -40,19 +42,19 @@ const MyButton = (props) => {
   const classes = useStyles();
 
   return (
-    <motion.div
+    <motion.button
       whileTap={{ scale: 0.95 }}
       transition={{
         type: "spring",
         stiffness: 260,
         damping: 20,
       }}
-      className={
+      className={`${
         props.variant === "contained" ? classes.primaryBtn : classes.outlinedBtn
-      }
+      } ${props.className && props.className}`}
     >
       <Typography className={classes.text}>{props.children}</Typography>
-    </motion.div>
+    </motion.button>
   );
 };
 

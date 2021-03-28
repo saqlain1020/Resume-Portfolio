@@ -5,6 +5,7 @@ import MainBg from "src/Components/MainBg/MainBg";
 import Menu from "src/Screens/Menu/Menu";
 import About from "./Screens/About/About";
 import Resume from "./Screens/Resume/Resume";
+import Contact from "./Screens/Contact/Contact";
 
 const Routes = () => {
   return (
@@ -15,6 +16,7 @@ const Routes = () => {
         <Route path="/menu" component={Menu} exact />
         <Route path="/about" component={About} exact />
         <Route path="/resume" component={Resume} exact />
+        <Route path="/contact" component={Contact} exact />
       </Switch>
     </MainBg>
   );

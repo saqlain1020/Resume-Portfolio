@@ -5,9 +5,10 @@ const theme = createMuiTheme({
     primary: {
       main: "rgb(100,100,30)",
     },
-    text:{
+    text: {
       light: "#333333",
-    }
+      primary: "#333333",
+    },
   },
   typography: {
     fontFamily: "'Poppins', sans-serif",
@@ -30,12 +31,24 @@ const theme = createMuiTheme({
         color: "#333333",
       },
     },
-    MuiLinearProgress:{
+    MuiLinearProgress: {
       root: {
-        height:10,
-        boxShadow: "0px 1px 5px rgba(0,0,0,0.3)"
-      }
-    }
+        height: 10,
+        boxShadow: "0px 1px 5px rgba(0,0,0,0.3)",
+      },
+    },
+    MuiOutlinedInput: {
+      root: {
+        background: "white",
+        borderRadius: 7,
+        "& fieldset": {
+          borderWidth: "0px !important",
+        },
+      },
+      notchedOutline: {
+        boxShadow: "0 0 10px rgb(0 0 0 / 10%)",
+      },
+    },
   },
 });
 
