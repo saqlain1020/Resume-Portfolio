@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, makeStyles, Typography } from "@material-ui/core";
 import { motion } from "framer-motion";
+import PortfolioCard from "src/Components/PortfolioCard/PortfolioCard";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,7 +29,7 @@ const Portfolio = () => {
       </Typography>
       <Grid container spacing={3}>
         <Grid item xs={12} sm={6} md={4}>
-            
+            <PortfolioCard/>
         </Grid>
       </Grid>
     </motion.div>

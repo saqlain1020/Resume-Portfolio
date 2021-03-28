@@ -6,6 +6,7 @@ import Menu from "src/Screens/Menu/Menu";
 import About from "./Screens/About/About";
 import Resume from "./Screens/Resume/Resume";
 import Contact from "./Screens/Contact/Contact";
+import Portfolio from "./Screens/Portfolio/Portfolio";
 
 const Routes = () => {
   return (
@@ -17,6 +18,7 @@ const Routes = () => {
         <Route path="/about" component={About} exact />
         <Route path="/resume" component={Resume} exact />
         <Route path="/contact" component={Contact} exact />
+        <Route path="/portfolio" component={Portfolio} exact />
       </Switch>
     </MainBg>
   );

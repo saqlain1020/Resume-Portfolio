@@ -2,8 +2,6 @@ import React from "react";
 import {
   Grid,
   makeStyles,
-  Paper,
-  Slide,
   TextField,
   Typography,
 } from "@material-ui/core";
