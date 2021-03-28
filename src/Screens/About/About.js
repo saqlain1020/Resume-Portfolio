@@ -4,6 +4,7 @@ import useStyles from "./useStyles";
 import ServiceCard from "src/Components/ServiceCard/ServiceCard";
 import MySkills from "src/Components/MySkills/MySkills";
 import { motion } from "framer-motion";
+import { services } from "src/Data";
 
 const About = () => {
   const classes = useStyles();
@@ -61,9 +62,9 @@ const About = () => {
         I provide amazing and high quality services
       </Typography>
       <div className={classes.servicesGrid}>
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
+        {services.map((ele, index) => (
+          <ServiceCard {...ele} key={index} />
+        ))}
       </div>
       <MySkills />
     </motion.div>

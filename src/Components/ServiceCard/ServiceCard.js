@@ -1,6 +1,5 @@
 import React from "react";
 import { makeStyles, Typography } from "@material-ui/core";
-import PhotoLibraryOutlinedIcon from "@material-ui/icons/PhotoLibraryOutlined";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
     width: 60,
     height: 60,
     color: theme.palette.text.light,
+    fill: theme.palette.text.light,
   },
   para: {
     marginTop: 20,
@@ -30,19 +30,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const ServiceCard = () => {
+const ServiceCard = ({ Icon, description, heading }) => {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <PhotoLibraryOutlinedIcon className={classes.icon} />
+      <Icon className={classes.icon} />
       <Typography variant="h4" className={classes.heading}>
-        <b>PHOTOGRAPHY</b>
+        <b>{heading}</b>
       </Typography>
-      <Typography className={classes.para}>
-        Nam reformidans vituper atori bus at. Id nisl diceret maiestatis qui,
-        mel affert doctus te.
-      </Typography>
+      <Typography className={classes.para}>{description}</Typography>
     </div>
   );
 };

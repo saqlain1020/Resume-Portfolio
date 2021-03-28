@@ -5,6 +5,7 @@ import CustomCarousel from "src/Components/CustomCarousel/CustomCarousel";
 import TestimonialCard from "src/Components/TestimonialCard/TestimonialCard";
 import { motion } from "framer-motion";
 import Fade from "react-reveal/Fade";
+import {education} from 'src/Data'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,26 +19,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const education = [
-  {
-    title: "CSS COLLEGE",
-    subTitle: "Masters - 2014 to 2018",
-    para:
-      "Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed.",
-  },
-  {
-    title: "CSS COLLEGE",
-    subTitle: "Masters - 2014 to 2018",
-    para:
-      "Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed.",
-  },
-  {
-    title: "CSS COLLEGE",
-    subTitle: "Masters - 2014 to 2018",
-    para:
-      "Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed.",
-  },
-];
 
 const Resume = () => {
   const classes = useStyles();

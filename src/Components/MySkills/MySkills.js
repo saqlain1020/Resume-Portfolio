@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, makeStyles, Typography } from "@material-ui/core";
 import CustomProgressBar from "../CustomProgressBar/CustomProgressBar";
+import {skills} from 'src/Data'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -8,33 +9,6 @@ const useStyles = makeStyles((theme) => ({
     marginTop:30,
   },
 }));
-
-const skills = [
-  {
-    title: "HTML/CSS",
-    value: 90,
-  },
-  {
-    title: "HTML/CSS",
-    value: 80,
-  },
-  {
-    title: "HTML/CSS",
-    value: 80,
-  },
-  {
-    title: "HTML/CSS",
-    value: 90,
-  },
-  {
-    title: "HTML/CSS",
-    value: 50,
-  },
-  {
-    title: "HTML/CSS",
-    value: 20,
-  },
-];
 
 const MySkills = () => {
   const classes = useStyles();
