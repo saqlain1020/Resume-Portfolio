@@ -1,6 +1,16 @@
 import React from "react";
-import { Grid, makeStyles, TextField, Typography } from "@material-ui/core";
+import {
+  Grid,
+  makeStyles,
+  Paper,
+  Slide,
+  TextField,
+  Typography,
+} from "@material-ui/core";
 import MyButton from "../MyButton/MyButton";
+import { init, send as sendMail } from "emailjs-com";
+import Alert from "@material-ui/lab/Alert";
+import { AnimatePresence, motion } from "framer-motion";
 
 const useStyles = makeStyles((theme) => ({
   textHeading: {
@@ -18,6 +28,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+init("user_UfZdGnbnAi6ueK5aTIQxR");
+
 const ContactForm = () => {
   const classes = useStyles();
   const [state, setState] = React.useState({
@@ -26,18 +38,31 @@ const ContactForm = () => {
     message: "",
     subject: "",
   });
+  const [showAlert, setShowAlert] = React.useState(0);
 
   const handleInput = (e) => {
-    console.log(e.target.name);
     setState({
       ...state,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = (e) => {
+  const alertHandle = (e) => {
+    setShowAlert(e);
+    setTimeout(() => setShowAlert(0), 3000);
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("submit");
+    try {
+      let res = await sendMail("service_kxunawl", "template_fzzvvtg", state);
+      console.log(res);
+      alertHandle(1);
+    } catch (err) {
+      console.log(err);
+      alertHandle(2);
+    }
   };
 
   return (
@@ -110,6 +135,34 @@ const ContactForm = () => {
               Submit
             </MyButton>
           </center>
+        </Grid>
+        <Grid item xs={12}>
+          <AnimatePresence>
+            {showAlert === 1 && (
+              <motion.div
+                key="success"
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                exit={{ scale: 0 }}
+              >
+                <Alert variant="filled" severity="success">
+                  Your message sent successfully
+                </Alert>
+              </motion.div>
+            )}
+            {showAlert === 2 && (
+              <motion.div
+                key="error"
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                exit={{ scale: 0 }}
+              >
+                <Alert variant="filled" severity="error">
+                  Error sending message
+                </Alert>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </Grid>
       </Grid>
     </form>
