@@ -58,14 +58,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const PortfolioCard = () => {
+const PortfolioCard = ({ imgs, para, title, titleImg, link }) => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
   return (
     <div
       className={classes.root}
-      style={{ backgroundImage: `url(${ImageSrc})` }}
+      style={{ backgroundImage: `url(${titleImg.default})` }}
     >
       <div className={`flex ${classes.hoverContainer}`}>
         <Typography className={classes.hoverText} onClick={() => setOpen(true)}>
@@ -75,28 +75,25 @@ const PortfolioCard = () => {
       <ModalManager open={open} close={() => setOpen(false)}>
         <div>
           <Carousel autoPlay infiniteLoop showStatus={false} showThumbs={false}>
-            <img src={ImageSrc} width="100%" alt=""/>
-            <img src={ImageSrc} width="100%" alt=""/>
-            <img src={ImageSrc} width="100%" alt=""/>
+            {imgs.map((ele, index) => (
+              <img key={index} src={ele.default} width="100%" style={{maxHeight:400,objectFit:"contain"}} alt="" />
+            ))}
           </Carousel>
           {/* <img src={ImageSrc} width="100%" /> */}
           <div style={{ padding: 20 }}>
             <Typography variant="h4" className={classes.projectTitle}>
               Project Title
             </Typography>
-            <Typography className={classes.para}>
-              lorem askdakhs askhdajkhd dgawudsad askjda gjkdh lorem askdakhs
-              askhdajkhd dgawudsad askjda gjkdh lorem askdakhs askhdajkhd
-              dgawudsad askjda gjkdh lorem askdakhs askhdajkhd dgawudsad askjda
-              gjkdh
-            </Typography>
-            <center>
-              <a href="/">
-                <MyButton variant="outlined" className={classes.visitBtn}>
-                  VISIT
-                </MyButton>
-              </a>
-            </center>
+            <Typography className={classes.para}>{para}</Typography>
+            {link && (
+              <center>
+                <a href={link}>
+                  <MyButton variant="outlined" className={classes.visitBtn}>
+                    VISIT
+                  </MyButton>
+                </a>
+              </center>
+            )}
           </div>
         </div>
       </ModalManager>

@@ -109,3 +109,72 @@ export const testimonials = [
     para: "Great experience. Really recommend working with this Seller.",
   },
 ];
+
+export const portfolio = [
+  {
+    titleImg: require("src/Assets/Images/Projects/Shopian/1.png"),
+    title: "Shopian",
+    para: `lorem askdakhs askhdajkhd dgawudsad askjda gjkdh lorem askdakhs 
+    askhdajkhd dgawudsad askjda gjkdh lorem askdakhs askhdajkhd dgawudsad 
+    askjda gjkdh lorem askdakhs askhdajkhd dgawudsad askjda gjkdh`,
+    link: "https://shopian-app.web.app/",
+    imgs: [
+      require("src/Assets/Images/Projects/Shopian/1.png"),
+      require("src/Assets/Images/Projects/Shopian/2.png"),
+      require("src/Assets/Images/Projects/Shopian/3.png"),
+      require("src/Assets/Images/Projects/Shopian/4.png"),
+      require("src/Assets/Images/Projects/Shopian/5.png"),
+    ]
+  },
+  {
+    titleImg: require("src/Assets/Images/Projects/WalletTracker/1.png"),
+    title: "Wallet Tracker",
+    para: `lorem askdakhs askhdajkhd dgawudsad askjda gjkdh lorem askdakhs 
+    askhdajkhd dgawudsad askjda gjkdh lorem askdakhs askhdajkhd dgawudsad 
+    askjda gjkdh lorem askdakhs askhdajkhd dgawudsad askjda gjkdh`,
+    link: "https://wallet-tracker-js-ce5d2.web.app/",
+    imgs: [
+      require("src/Assets/Images/Projects/WalletTracker/1.png"),
+      require("src/Assets/Images/Projects/WalletTracker/2.png"),
+      require("src/Assets/Images/Projects/WalletTracker/3.png"),
+    ]
+  },
+  {
+    titleImg: require("src/Assets/Images/1.jpg"),
+    title: "Project Title",
+    para: `lorem askdakhs askhdajkhd dgawudsad askjda gjkdh lorem askdakhs 
+    askhdajkhd dgawudsad askjda gjkdh lorem askdakhs askhdajkhd dgawudsad 
+    askjda gjkdh lorem askdakhs askhdajkhd dgawudsad askjda gjkdh`,
+    link: "https://google.com",
+    imgs: [
+      require("src/Assets/Images/1.jpg"),
+      require("src/Assets/Images/1.jpg"),
+      require("src/Assets/Images/1.jpg"),
+    ]
+  },
+  {
+    titleImg: require("src/Assets/Images/1.jpg"),
+    title: "Project Title",
+    para: `lorem askdakhs askhdajkhd dgawudsad askjda gjkdh lorem askdakhs 
+    askhdajkhd dgawudsad askjda gjkdh lorem askdakhs askhdajkhd dgawudsad 
+    askjda gjkdh lorem askdakhs askhdajkhd dgawudsad askjda gjkdh`,
+    imgs: [
+      require("src/Assets/Images/1.jpg"),
+      require("src/Assets/Images/1.jpg"),
+      require("src/Assets/Images/1.jpg"),
+    ]
+  },
+  {
+    titleImg: require("src/Assets/Images/1.jpg"),
+    title: "Project Title",
+    para: `lorem askdakhs askhdajkhd dgawudsad askjda gjkdh lorem askdakhs 
+    askhdajkhd dgawudsad askjda gjkdh lorem askdakhs askhdajkhd dgawudsad 
+    askjda gjkdh lorem askdakhs askhdajkhd dgawudsad askjda gjkdh`,
+    link: "https://google.com",
+    imgs: [
+      require("src/Assets/Images/1.jpg"),
+      require("src/Assets/Images/1.jpg"),
+      require("src/Assets/Images/1.jpg"),
+    ]
+  },
+]
