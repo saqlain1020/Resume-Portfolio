@@ -5,7 +5,7 @@ import CustomCarousel from "src/Components/CustomCarousel/CustomCarousel";
 import TestimonialCard from "src/Components/TestimonialCard/TestimonialCard";
 import { motion } from "framer-motion";
 import Fade from "react-reveal/Fade";
-import {education,experience} from 'src/Data'
+import { education, experience, testimonials } from "src/Data";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 20,
   },
 }));
-
 
 const Resume = () => {
   const classes = useStyles();
@@ -60,7 +59,7 @@ const Resume = () => {
         Take a look at what other people say about me
       </Typography>
       <CustomCarousel>
-        {education.map((ele, index) => (
+        {testimonials.map((ele, index) => (
           <TestimonialCard key={index} {...ele} />
         ))}
       </CustomCarousel>

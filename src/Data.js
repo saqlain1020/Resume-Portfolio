@@ -35,7 +35,7 @@ export const skills = [
 
   {
     title: "MATERIAL UI",
-    value: 100,
+    value: 95,
   },
   {
     title: "ADVANCE JS",
@@ -52,44 +52,60 @@ export const skills = [
 ];
 
 export const education = [
-    {
-        title: "University of Karachi",
-        subTitle: "BS:SE - 2019 to current",
-        para:
-          "Bachelors in Software Engineering from UBIT Karachi University.",
-      },
-      {
-        title: "Adamjee Govt Sci College",
-        subTitle: "Intermediate - 2016 to 2018",
-        para:
-          "Intermediate passed with A grade, from the top college.",
-      },
-      {
-        title: "School",
-        subTitle: "Matric - 2014 to 2016",
-        para:
-          "Matric SSC passed with A+ grade, with various congratulating certificates.",
-      },
-]
-
+  {
+    title: "University of Karachi",
+    subTitle: "BS:SE - 2019 to current",
+    para: "Bachelors in Software Engineering from UBIT Karachi University.",
+  },
+  {
+    title: "Adamjee Govt Sci College",
+    subTitle: "Intermediate - 2016 to 2018",
+    para: "Intermediate passed with A grade, from the top college.",
+  },
+  {
+    title: "School",
+    subTitle: "Matric - 2014 to 2016",
+    para:
+      "Matric SSC passed with A+ grade, with various congratulating certificates.",
+  },
+];
 
 export const experience = [
   {
-      title: "Frontend Dev at Novasoft",
-      subTitle: "2020 to current",
-      para:
-        "Working as a frontend react developer at a software house named Novasoft.",
-    },
-    {
-      title: "Freelancing",
-      subTitle: "2019 to current",
-      para:
-        "Worked on various projects web based and windows in JAVA C# C++ Python...",
-    },
-    {
-      title: "Graphics Designing at AlRaheem Printing",
-      subTitle: "2018",
-      para:
-        "1 Year graphics designing at Al-Raheem Printing Services.",
-    },
-]
+    title: "Frontend Dev at Novasoft",
+    subTitle: "2020 to current",
+    para:
+      "Working as a frontend react developer at a software house named Novasoft.",
+  },
+  {
+    title: "Freelancing",
+    subTitle: "2019 to current",
+    para:
+      "Worked on various projects web based and windows in JAVA C# C++ Python...",
+  },
+  {
+    title: "Graphics Designing at AlRaheem Printing",
+    subTitle: "2018",
+    para: "1 Year graphics designing at Al-Raheem Printing Services.",
+  },
+];
+
+export const testimonials = [
+  {
+    title: "abdul_rafay_ (PK)",
+    subTitle: "5 Star at Fiverr",
+    para: `Saqlain is an expert react developer, experienced in building beautiful UI, 
+    fast delivery and clean code, I am extremely satisfied with the work and I highly 
+    recommend him. Will definitely work with him again.`,
+  },
+  {
+    title: "style2u (CR)",
+    subTitle: "5 Star at Fiverr",
+    para: `I am highly recommend on Saqlan as a profession to work with I know I will use his service again`,
+  },
+  {
+    title: "perecodina (US)",
+    subTitle: "5 Star Service on Fiverr",
+    para: "Great experience. Really recommend working with this Seller.",
+  },
+];

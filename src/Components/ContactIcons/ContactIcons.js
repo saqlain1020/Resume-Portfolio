@@ -5,6 +5,7 @@ import MailIcon from "@material-ui/icons/Mail";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LanguageIcon from "@material-ui/icons/Language";
 import { motion } from "framer-motion";
+import FiverIco from "src/Assets/Icons/FiverrIco";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
   icon: {
     color: theme.palette.primary.main,
+    fill: theme.palette.primary.main,
     height: 50,
     width: 50,
     padding: 10,
@@ -66,6 +68,12 @@ const ContactIcons = () => {
           <GitHubIcon className={classes.icon} />
         </a>
         <Typography>github.com/saqlain1020</Typography>
+      </motion.div>
+      <motion.div variants={items} className={`flex ${classes.item}`}>
+        <a href="https://www.fiverr.com/saqlain1020">
+          <FiverIco className={classes.icon} />
+        </a>
+        <Typography>fiverr.com/saqlain1020</Typography>
       </motion.div>
       <motion.div variants={items} className={`flex ${classes.item}`}>
         <a href="tel:+923000580479">
