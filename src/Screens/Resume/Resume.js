@@ -5,7 +5,7 @@ import CustomCarousel from "src/Components/CustomCarousel/CustomCarousel";
 import TestimonialCard from "src/Components/TestimonialCard/TestimonialCard";
 import { motion } from "framer-motion";
 import Fade from "react-reveal/Fade";
-import {education} from 'src/Data'
+import {education,experience} from 'src/Data'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -48,7 +48,7 @@ const Resume = () => {
       </Typography>
       <div className={classes.resumeCardsContainer}>
         <Fade bottom>
-          {education.map((ele, index) => (
+          {experience.map((ele, index) => (
             <ResumeCard key={index} {...ele} />
           ))}
         </Fade>

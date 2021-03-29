@@ -71,3 +71,25 @@ export const education = [
           "Matric SSC passed with A+ grade, with various congratulating certificates.",
       },
 ]
+
+
+export const experience = [
+  {
+      title: "Frontend Dev at Novasoft",
+      subTitle: "2020 to current",
+      para:
+        "Working as a frontend react developer at a software house named Novasoft.",
+    },
+    {
+      title: "Freelancing",
+      subTitle: "2019 to current",
+      para:
+        "Worked on various projects web based and windows in JAVA C# C++ Python...",
+    },
+    {
+      title: "Graphics Designing at AlRaheem Printing",
+      subTitle: "2018",
+      para:
+        "1 Year graphics designing at Al-Raheem Printing Services.",
+    },
+]
