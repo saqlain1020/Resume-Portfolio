@@ -20,8 +20,8 @@ const useStyles = makeStyles((theme) => ({
     padding: 20,
   },
   para: {
-    marginTop: 40,
-    fontWeight: 500,
+    marginTop: "40px !important",
+    fontWeight: "500 !important",
     maxWidth: 600,
   },
 }));
