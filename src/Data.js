@@ -112,69 +112,71 @@ export const testimonials = [
 
 export const portfolio = [
   {
-    titleImg: require("src/Assets/Images/Projects/Shopian/1.png"),
+    titleImg: require("src/Assets/Images/Projects/Kelekshen/1.png").default,
+    title: "Kelekshen",
+    para: `lorem askdakhs askhdajkhd dgawudsad askjda gjkdh lorem askdakhs 
+    askhdajkhd dgawudsad askjda gjkdh lorem askdakhs askhdajkhd dgawudsad 
+    askjda gjkdh lorem askdakhs askhdajkhd dgawudsad askjda gjkdh`,
+    link: "https://kelekshen.netlify.app/",
+    imgs: [
+      require("src/Assets/Images/Projects/Kelekshen/1.png").default,
+      require("src/Assets/Images/Projects/Kelekshen/2.png").default,
+      require("src/Assets/Images/Projects/Kelekshen/3.png").default,
+      require("src/Assets/Images/Projects/Kelekshen/4.png").default,
+      require("src/Assets/Images/Projects/Kelekshen/5.png").default,
+    ]
+  },
+  {
+    titleImg: require("src/Assets/Images/Projects/Shopian/1.png").default,
     title: "Shopian",
     para: `lorem askdakhs askhdajkhd dgawudsad askjda gjkdh lorem askdakhs 
     askhdajkhd dgawudsad askjda gjkdh lorem askdakhs askhdajkhd dgawudsad 
     askjda gjkdh lorem askdakhs askhdajkhd dgawudsad askjda gjkdh`,
     link: "https://shopian-app.web.app/",
     imgs: [
-      require("src/Assets/Images/Projects/Shopian/1.png"),
-      require("src/Assets/Images/Projects/Shopian/2.png"),
-      require("src/Assets/Images/Projects/Shopian/3.png"),
-      require("src/Assets/Images/Projects/Shopian/4.png"),
-      require("src/Assets/Images/Projects/Shopian/5.png"),
+      require("src/Assets/Images/Projects/Shopian/1.png").default,
+      require("src/Assets/Images/Projects/Shopian/2.png").default,
+      require("src/Assets/Images/Projects/Shopian/3.png").default,
+      require("src/Assets/Images/Projects/Shopian/4.png").default,
+      require("src/Assets/Images/Projects/Shopian/5.png").default,
     ]
   },
   {
-    titleImg: require("src/Assets/Images/Projects/WalletTracker/1.png"),
+    titleImg: require("src/Assets/Images/Projects/WalletTracker/1.png").default,
     title: "Wallet Tracker",
     para: `lorem askdakhs askhdajkhd dgawudsad askjda gjkdh lorem askdakhs 
     askhdajkhd dgawudsad askjda gjkdh lorem askdakhs askhdajkhd dgawudsad 
     askjda gjkdh lorem askdakhs askhdajkhd dgawudsad askjda gjkdh`,
     link: "https://wallet-tracker-js-ce5d2.web.app/",
     imgs: [
-      require("src/Assets/Images/Projects/WalletTracker/1.png"),
-      require("src/Assets/Images/Projects/WalletTracker/2.png"),
-      require("src/Assets/Images/Projects/WalletTracker/3.png"),
+      require("src/Assets/Images/Projects/WalletTracker/1.png").default,
+      require("src/Assets/Images/Projects/WalletTracker/2.png").default,
+      require("src/Assets/Images/Projects/WalletTracker/3.png").default,
     ]
   },
   {
-    titleImg: require("src/Assets/Images/1.jpg"),
-    title: "Project Title",
+    titleImg: require("src/Assets/Images/Projects/SaqlainPrinters/1.png").default,
+    title: "Saqlain Printers",
     para: `lorem askdakhs askhdajkhd dgawudsad askjda gjkdh lorem askdakhs 
     askhdajkhd dgawudsad askjda gjkdh lorem askdakhs askhdajkhd dgawudsad 
     askjda gjkdh lorem askdakhs askhdajkhd dgawudsad askjda gjkdh`,
-    link: "https://google.com",
+    link: "https://saqlainprinters.web.app/",
     imgs: [
-      require("src/Assets/Images/1.jpg"),
-      require("src/Assets/Images/1.jpg"),
-      require("src/Assets/Images/1.jpg"),
+      require("src/Assets/Images/Projects/SaqlainPrinters/1.png").default,
+      require("src/Assets/Images/Projects/SaqlainPrinters/2.png").default,
+      require("src/Assets/Images/Projects/SaqlainPrinters/3.png").default,
+      require("src/Assets/Images/Projects/SaqlainPrinters/4.png").default,
     ]
   },
   {
-    titleImg: require("src/Assets/Images/1.jpg"),
-    title: "Project Title",
-    para: `lorem askdakhs askhdajkhd dgawudsad askjda gjkdh lorem askdakhs 
-    askhdajkhd dgawudsad askjda gjkdh lorem askdakhs askhdajkhd dgawudsad 
-    askjda gjkdh lorem askdakhs askhdajkhd dgawudsad askjda gjkdh`,
+    titleImg: require("src/Assets/Images/Projects/commingsoon.png").default,
+    title: "",
+    para: ``,
+    // link: "https://google.com",
     imgs: [
-      require("src/Assets/Images/1.jpg"),
-      require("src/Assets/Images/1.jpg"),
-      require("src/Assets/Images/1.jpg"),
-    ]
-  },
-  {
-    titleImg: require("src/Assets/Images/1.jpg"),
-    title: "Project Title",
-    para: `lorem askdakhs askhdajkhd dgawudsad askjda gjkdh lorem askdakhs 
-    askhdajkhd dgawudsad askjda gjkdh lorem askdakhs askhdajkhd dgawudsad 
-    askjda gjkdh lorem askdakhs askhdajkhd dgawudsad askjda gjkdh`,
-    link: "https://google.com",
-    imgs: [
-      require("src/Assets/Images/1.jpg"),
-      require("src/Assets/Images/1.jpg"),
-      require("src/Assets/Images/1.jpg"),
+      require("src/Assets/Images/Projects/commingsoon.png").default,
+      require("src/Assets/Images/Projects/commingsoon.png").default,
+      require("src/Assets/Images/Projects/commingsoon.png").default,
     ]
   },
 ]

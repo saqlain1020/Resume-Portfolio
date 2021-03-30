@@ -65,7 +65,7 @@ const PortfolioCard = ({ imgs, para, title, titleImg, link }) => {
   return (
     <div
       className={classes.root}
-      style={{ backgroundImage: `url(${titleImg.default})` }}
+      style={{ backgroundImage: `url(${titleImg})` }}
     >
       <div className={`flex ${classes.hoverContainer}`}>
         <Typography className={classes.hoverText} onClick={() => setOpen(true)}>
@@ -76,13 +76,13 @@ const PortfolioCard = ({ imgs, para, title, titleImg, link }) => {
         <div>
           <Carousel autoPlay infiniteLoop showStatus={false} showThumbs={false}>
             {imgs.map((ele, index) => (
-              <img key={index} src={ele.default} width="100%" style={{maxHeight:400,objectFit:"contain"}} alt="" />
+              <img key={index} src={ele} width="100%" style={{maxHeight:400,objectFit:"contain"}} alt="" />
             ))}
           </Carousel>
           {/* <img src={ImageSrc} width="100%" /> */}
           <div style={{ padding: 20 }}>
             <Typography variant="h4" className={classes.projectTitle}>
-              Project Title
+              {title}
             </Typography>
             <Typography className={classes.para}>{para}</Typography>
             {link && (
