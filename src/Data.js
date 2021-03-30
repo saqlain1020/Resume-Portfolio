@@ -114,9 +114,9 @@ export const portfolio = [
   {
     titleImg: require("src/Assets/Images/Projects/Kelekshen/1.png").default,
     title: "Kelekshen",
-    para: `lorem askdakhs askhdajkhd dgawudsad askjda gjkdh lorem askdakhs 
-    askhdajkhd dgawudsad askjda gjkdh lorem askdakhs askhdajkhd dgawudsad 
-    askjda gjkdh lorem askdakhs askhdajkhd dgawudsad askjda gjkdh`,
+    para: `A blockchain trading system, frontend developed on React JS, 
+    with material ui core components and alot of custom desinged components 
+    and modals. With a beautiful theme this website highlights my potential as a frontend dev.`,
     link: "https://kelekshen.netlify.app/",
     imgs: [
       require("src/Assets/Images/Projects/Kelekshen/1.png").default,
@@ -124,14 +124,14 @@ export const portfolio = [
       require("src/Assets/Images/Projects/Kelekshen/3.png").default,
       require("src/Assets/Images/Projects/Kelekshen/4.png").default,
       require("src/Assets/Images/Projects/Kelekshen/5.png").default,
-    ]
+    ],
   },
   {
     titleImg: require("src/Assets/Images/Projects/Shopian/1.png").default,
     title: "Shopian",
-    para: `lorem askdakhs askhdajkhd dgawudsad askjda gjkdh lorem askdakhs 
-    askhdajkhd dgawudsad askjda gjkdh lorem askdakhs askhdajkhd dgawudsad 
-    askjda gjkdh lorem askdakhs askhdajkhd dgawudsad askjda gjkdh`,
+    para: `This is a fullstack application currently in development and one of the first sites which 
+    i created using both React JS Material UI and Firebase backend.
+    This app combines a materialistic ui with powerful backend provided by google firebase.`,
     link: "https://shopian-app.web.app/",
     imgs: [
       require("src/Assets/Images/Projects/Shopian/1.png").default,
@@ -139,34 +139,32 @@ export const portfolio = [
       require("src/Assets/Images/Projects/Shopian/3.png").default,
       require("src/Assets/Images/Projects/Shopian/4.png").default,
       require("src/Assets/Images/Projects/Shopian/5.png").default,
-    ]
+    ],
   },
   {
     titleImg: require("src/Assets/Images/Projects/WalletTracker/1.png").default,
     title: "Wallet Tracker",
-    para: `lorem askdakhs askhdajkhd dgawudsad askjda gjkdh lorem askdakhs 
-    askhdajkhd dgawudsad askjda gjkdh lorem askdakhs askhdajkhd dgawudsad 
-    askjda gjkdh lorem askdakhs askhdajkhd dgawudsad askjda gjkdh`,
+    para: `This is a fullstack app created with google firebase backend and pure HTML/CSS and Javascript.
+    It's a wallet tracking app which you can signin in to keep track of your expenses and income very easily with a simple very easy to understand UI`,
     link: "https://wallet-tracker-js-ce5d2.web.app/",
     imgs: [
       require("src/Assets/Images/Projects/WalletTracker/1.png").default,
       require("src/Assets/Images/Projects/WalletTracker/2.png").default,
       require("src/Assets/Images/Projects/WalletTracker/3.png").default,
-    ]
+    ],
   },
   {
-    titleImg: require("src/Assets/Images/Projects/SaqlainPrinters/1.png").default,
+    titleImg: require("src/Assets/Images/Projects/SaqlainPrinters/1.png")
+      .default,
     title: "Saqlain Printers",
-    para: `lorem askdakhs askhdajkhd dgawudsad askjda gjkdh lorem askdakhs 
-    askhdajkhd dgawudsad askjda gjkdh lorem askdakhs askhdajkhd dgawudsad 
-    askjda gjkdh lorem askdakhs askhdajkhd dgawudsad askjda gjkdh`,
+    para: `Website made with pure html/css and pure javascript animations.`,
     link: "https://saqlainprinters.web.app/",
     imgs: [
       require("src/Assets/Images/Projects/SaqlainPrinters/1.png").default,
       require("src/Assets/Images/Projects/SaqlainPrinters/2.png").default,
       require("src/Assets/Images/Projects/SaqlainPrinters/3.png").default,
       require("src/Assets/Images/Projects/SaqlainPrinters/4.png").default,
-    ]
+    ],
   },
   {
     titleImg: require("src/Assets/Images/Projects/commingsoon.png").default,
@@ -177,6 +175,6 @@ export const portfolio = [
       require("src/Assets/Images/Projects/commingsoon.png").default,
       require("src/Assets/Images/Projects/commingsoon.png").default,
       require("src/Assets/Images/Projects/commingsoon.png").default,
-    ]
+    ],
   },
-]
+];
