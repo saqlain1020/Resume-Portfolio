@@ -7,14 +7,12 @@ import store, { persistor } from "./Redux/store";
 import { PersistGate } from "redux-persist/integration/react";
 import { BrowserRouter } from "react-router-dom";
 // import reportWebVitals from './reportWebVitals';
-import {GTag} from '@deptno/gtag-react'
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate persistor={persistor}>
         <BrowserRouter>
-        <GTag id={"G-EQ4801JGM0"} />
           <App />
         </BrowserRouter>
       </PersistGate>
