@@ -72,8 +72,14 @@ export const education = [
 
 export const experience = [
   {
-    title: "Frontend Dev at Novasoft",
+    title: "Frontend Dev at Slectus(US)",
     subTitle: "2020 to current",
+    para:
+      "Working at a US based startup name Slectus. As remote dev for react frontend development.",
+  },
+  {
+    title: "Frontend Dev at Novasoft",
+    subTitle: "2020 to 2020",
     para:
       "Working as a frontend react developer at a software house named Novasoft.",
   },
@@ -99,13 +105,19 @@ export const testimonials = [
     recommend him. Will definitely work with him again.`,
   },
   {
+    title: "jesusalc (GR)",
+    subTitle: "5 Star at Fiverr",
+    para: `Good communication, if he does not know, he will figure out and participate together. 
+    Good asking questions. Good idea for design.`,
+  },
+  {
     title: "style2u (CR)",
     subTitle: "5 Star at Fiverr",
     para: `I am highly recommend on Saqlan as a profession to work with I know I will use his service again`,
   },
   {
     title: "perecodina (US)",
-    subTitle: "5 Star Service on Fiverr",
+    subTitle: "5 Star Review on Fiverr",
     para: "Great experience. Really recommend working with this Seller.",
   },
 ];
