@@ -179,6 +179,18 @@ export const portfolio = [
     ],
   },
   {
+    titleImg: require("src/Assets/Images/Projects/MapkitJS/title.png").default,
+    title: "Mapkit JS Impl",
+    para: `Web app made with Apple's web Mapkit JS, with capabilities of adding pins and labeling them per user basis.
+    User authentication using firebase auth and pins saving in firestore.`,
+    link: "https://determined-kalam-e70242.netlify.app/",
+    imgs: [
+      require("src/Assets/Images/Projects/MapkitJS/1.png").default,
+      require("src/Assets/Images/Projects/MapkitJS/2.png").default,
+      require("src/Assets/Images/Projects/MapkitJS/3.png").default,
+    ],
+  },
+  {
     titleImg: require("src/Assets/Images/Projects/commingsoon.png").default,
     title: "",
     para: ``,
