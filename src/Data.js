@@ -49,6 +49,14 @@ export const skills = [
     title: "3rd PARTY APIs",
     value: 75,
   },
+  {
+    title: "Node JS",
+    value: 90,
+  },
+  {
+    title: "Mongo DB",
+    value: 90,
+  },
 ];
 
 export const education = [

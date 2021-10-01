@@ -10,6 +10,7 @@ import { useWindowSize } from "src/Hooks/Hooks";
 
 function App(props) {
   const size = useWindowSize();
+  const [count, setCount] = React.useState(0);
 
   return (
     <>

@@ -27,9 +27,15 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   servicesGrid: {
-    marginTop:20,
-    display:"grid",
-    gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))",
+    marginTop: 20,
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr 1fr",
+    [theme.breakpoints.down("md")]: {
+      gridTemplateColumns: "1fr 1fr",
+    },
+    [theme.breakpoints.down("sm")]: {
+      gridTemplateColumns: "1fr",
+    },
   },
 }));
 export default useStyles;
