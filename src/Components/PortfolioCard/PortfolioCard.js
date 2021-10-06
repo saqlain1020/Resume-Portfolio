@@ -1,10 +1,13 @@
 import React from "react";
-import { makeStyles, Typography } from "@material-ui/core";
+import { IconButton, makeStyles, Typography } from "@material-ui/core";
+import FullscreenIcon from "@material-ui/icons/Fullscreen";
 import ModalManager from "src/Components/ModalManager/ModalManager";
 import ImageSrc from "src/Assets/Images/1.jpg";
 import MyButton from "../MyButton/MyButton";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import { SRLWrapper } from "simple-react-lightbox";
+import { useLightbox } from "simple-react-lightbox";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -56,11 +59,24 @@ const useStyles = makeStyles((theme) => ({
     //   width:"150px",
     marginTop: 10,
   },
+  fullScreenBtn: {
+    position: "absolute",
+    top: 280,
+    right: 20,
+    color: theme.palette.primary.main,
+    background: "white",
+    width: 40,
+    height: 40,
+    "&:hover": {
+      background: "white",
+    },
+  },
 }));
 
 const PortfolioCard = ({ imgs, para, title, titleImg, link }) => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
+  const { openLightbox, closeLightbox } = useLightbox();
 
   return (
     <div
@@ -74,11 +90,24 @@ const PortfolioCard = ({ imgs, para, title, titleImg, link }) => {
       </div>
       <ModalManager open={open} close={() => setOpen(false)}>
         <div>
+          <SRLWrapper elements={imgs.map((item) => ({ src: item }))} />
           <Carousel autoPlay infiniteLoop showStatus={false} showThumbs={false}>
             {imgs.map((ele, index) => (
-              <img key={index} src={ele} width="100%" style={{maxHeight:400,objectFit:"contain"}} alt="" />
+              <img
+                key={index}
+                src={ele}
+                width="100%"
+                style={{ maxHeight: 400, objectFit: "contain" }}
+                alt=""
+              />
             ))}
           </Carousel>
+          <IconButton
+            className={classes.fullScreenBtn}
+            onClick={() => openLightbox(0)}
+          >
+            <FullscreenIcon />
+          </IconButton>
           {/* <img src={ImageSrc} width="100%" /> */}
           <div style={{ padding: 20 }}>
             <Typography variant="h4" className={classes.projectTitle}>
