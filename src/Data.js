@@ -73,8 +73,7 @@ export const education = [
   {
     title: "School",
     subTitle: "Matric - 2014 to 2016",
-    para:
-      "Matric SSC passed with A+ grade, with various congratulating certificates.",
+    para: "Matric SSC passed with A+ grade, with various congratulating certificates.",
   },
 ];
 
@@ -82,20 +81,17 @@ export const experience = [
   {
     title: "Frontend Dev at Slectus(US)",
     subTitle: "2020 to current",
-    para:
-      "Working at a US based startup name Slectus. As remote dev for react frontend development.",
+    para: "Working at a US based startup name Slectus. As remote dev for react frontend development.",
   },
   {
     title: "Frontend Dev at Novasoft",
     subTitle: "2020 to 2020",
-    para:
-      "Working as a frontend react developer at a software house named Novasoft.",
+    para: "Working as a frontend react developer at a software house named Novasoft.",
   },
   {
     title: "Freelancing",
     subTitle: "2019 to current",
-    para:
-      "Worked on various projects web based and windows in JAVA C# C++ Python...",
+    para: "Worked on various projects web based and windows in JAVA C# C++ Python...",
   },
   {
     title: "Graphics Designing at AlRaheem Printing",
@@ -132,6 +128,68 @@ export const testimonials = [
 
 export const portfolio = [
   {
+    titleImg: require("src/Assets/Images/Projects/Swippy/1.png").default,
+    title: "Swippy",
+    para: `This is a social links sharing app, here you can make a profile and add all your social links
+    and share your profile link, There is also NFC tag functionality, just by touching someone else's NFC tag
+    it will redirect to their profile or open specific social account as configured. Core technologies used are
+    React-Redux and Firebase with authentication.`,
+    link: "https://competent-jennings-aee101.netlify.app/",
+    imgs: [
+      require("src/Assets/Images/Projects/Swippy/1.png").default,
+      require("src/Assets/Images/Projects/Swippy/2.png").default,
+      require("src/Assets/Images/Projects/Swippy/3.png").default,
+      require("src/Assets/Images/Projects/Swippy/4.png").default,
+      require("src/Assets/Images/Projects/Swippy/5.png").default,
+      require("src/Assets/Images/Projects/Swippy/6.png").default,
+      require("src/Assets/Images/Projects/Swippy/7.png").default,
+    ],
+  },
+  {
+    titleImg: require("src/Assets/Images/Projects/NFTComics/1.png").default,
+    title: "NFT-Comics",
+    para: `This is a blockchain related nft web`,
+    link: "https://hungry-kalam-cd5768.netlify.app/",
+    imgs: [
+      require("src/Assets/Images/Projects/NFTComics/1.png").default,
+      require("src/Assets/Images/Projects/NFTComics/2.png").default,
+      require("src/Assets/Images/Projects/NFTComics/3.png").default,
+      require("src/Assets/Images/Projects/NFTComics/4.png").default,
+      require("src/Assets/Images/Projects/NFTComics/5.png").default,
+      require("src/Assets/Images/Projects/NFTComics/6.png").default,
+      require("src/Assets/Images/Projects/NFTComics/7.png").default,
+      require("src/Assets/Images/Projects/NFTComics/8.png").default,
+      require("src/Assets/Images/Projects/NFTComics/9.png").default,
+      require("src/Assets/Images/Projects/NFTComics/10.png").default,
+    ],
+  },
+  {
+    titleImg: require("src/Assets/Images/Projects/Fantopia/1.png").default,
+    title: "Fantopia",
+    para: `This is a blockchain related nft selling web`,
+    // link: "https://competent-jennings-aee101.netlify.app/",
+    imgs: [
+      require("src/Assets/Images/Projects/Fantopia/1.png").default,
+      require("src/Assets/Images/Projects/Fantopia/2.png").default,
+      require("src/Assets/Images/Projects/Fantopia/3.png").default,
+      require("src/Assets/Images/Projects/Fantopia/4.png").default,
+      require("src/Assets/Images/Projects/Fantopia/5.png").default,
+      require("src/Assets/Images/Projects/Fantopia/6.png").default,
+      require("src/Assets/Images/Projects/Fantopia/7.png").default,
+    ],
+  },
+  {
+    titleImg: require("src/Assets/Images/Projects/DragEditor/1.png").default,
+    title: "Drag-Editor",
+    para: `This is a basic editing app, which has the ability to add images and stickers and text in different styles. All components
+    are manipulated using MovableJS, and current artboard can be saved in JSON format and reloaded.`,
+    link: "https://mystifying-bardeen-45fd62.netlify.app/",
+    imgs: [
+      require("src/Assets/Images/Projects/DragEditor/1.png").default,
+      require("src/Assets/Images/Projects/DragEditor/2.png").default,
+    ],
+  },
+  {
     titleImg: require("src/Assets/Images/Projects/Kelekshen/1.png").default,
     title: "Kelekshen",
     para: `A blockchain trading system, frontend developed on React JS, 
@@ -144,6 +202,20 @@ export const portfolio = [
       require("src/Assets/Images/Projects/Kelekshen/3.png").default,
       require("src/Assets/Images/Projects/Kelekshen/4.png").default,
       require("src/Assets/Images/Projects/Kelekshen/5.png").default,
+    ],
+  },
+  {
+    titleImg: require("src/Assets/Images/Projects/RedditRedesign/1.jpg")
+      .default,
+    title: "Reddit Redesign",
+    para: `This is a fresh take on reddit like web app, Appleaing UI and nested commenting and posting functionality.
+    Core technologies used are React-Redux and Firebase with authentication.`,
+    link: "https://hardcore-carson-11d2eb.netlify.app/",
+    imgs: [
+      require("src/Assets/Images/Projects/RedditRedesign/1.jpg").default,
+      require("src/Assets/Images/Projects/RedditRedesign/2.jpg").default,
+      require("src/Assets/Images/Projects/RedditRedesign/3.jpg").default,
+      require("src/Assets/Images/Projects/RedditRedesign/4.jpg").default,
     ],
   },
   {

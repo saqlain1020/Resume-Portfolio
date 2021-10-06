@@ -87,7 +87,7 @@ const PortfolioCard = ({ imgs, para, title, titleImg, link }) => {
             <Typography className={classes.para}>{para}</Typography>
             {link && (
               <center>
-                <a href={link}>
+                <a href={link} target="_blank">
                   <MyButton variant="outlined" className={classes.visitBtn}>
                     VISIT
                   </MyButton>
