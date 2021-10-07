@@ -164,6 +164,19 @@ export const portfolio = [
     ],
   },
   {
+    titleImg: require("src/Assets/Images/Projects/Novasoft/1.png").default,
+    title: "Novasoft",
+    para: `Website of my previous job organization, It is created by me on ReactJS.`,
+    link: "https://novasoft.tech/",
+    imgs: [
+      require("src/Assets/Images/Projects/Novasoft/1.png").default,
+      require("src/Assets/Images/Projects/Novasoft/2.png").default,
+      require("src/Assets/Images/Projects/Novasoft/3.png").default,
+      require("src/Assets/Images/Projects/Novasoft/4.png").default,
+      require("src/Assets/Images/Projects/Novasoft/5.png").default,
+    ],
+  },
+  {
     titleImg: require("src/Assets/Images/Projects/Fantopia/1.png").default,
     title: "Fantopia",
     para: `This is a blockchain related nft selling web`,
