@@ -38,16 +38,12 @@ export const skills = [
     value: 95,
   },
   {
-    title: "ADVANCE JS",
-    value: 85,
-  },
-  {
     title: "FIREBASE",
     value: 90,
   },
   {
     title: "3rd PARTY APIs",
-    value: 75,
+    value: 80,
   },
   {
     title: "Node JS",
@@ -56,6 +52,10 @@ export const skills = [
   {
     title: "Mongo DB",
     value: 90,
+  },
+  {
+    title: "Socket IO",
+    value: 75,
   },
 ];
 
