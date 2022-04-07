@@ -54,7 +54,7 @@ const ContactForm = () => {
     e.preventDefault();
     console.log("submit");
     try {
-      let res = await sendMail("service_kxunawl", "template_fzzvvtg", state);
+      let res = await sendMail("service_7vupatn", "template_fzzvvtg", state);
       console.log(res);
       alertHandle(1);
     } catch (err) {

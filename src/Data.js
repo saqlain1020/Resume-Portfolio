@@ -2,6 +2,9 @@ import ReactIco from "./Assets/Icons/ReactIco";
 
 import MuiIco from "./Assets/Icons/MuiIco";
 import FirebaseIco from "./Assets/Icons/FirebaseIco";
+import DeployIco from "./Assets/Icons/DeployIco";
+import TypescriptIco from "./Assets/Icons/TypescriptIco";
+import NodejsIco from "./Assets/Icons/NodejsIco";
 
 export const services = [
   {
@@ -16,9 +19,24 @@ export const services = [
     description: `Material-UI is a simple and customizable component library to build faster, beautiful, and more accessible React applications.`,
   },
   {
+    Icon: NodejsIco,
+    heading: "Node JS",
+    description: `Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.`,
+  },
+  {
     Icon: FirebaseIco,
     heading: "FIREBASE",
     description: `Firebase provides serverless architecture with many services including authentication, storage, database, cloud functions etc.`,
+  },
+  {
+    Icon: DeployIco,
+    heading: "DEPLOYMENT",
+    description: `Deploy Apps to Netlify, Heroku, Firebase, AWS, Vercel and more.`,
+  },
+  {
+    Icon: TypescriptIco,
+    heading: "Typescript",
+    description: `Typescript is a strongly typed language a superset of JavaScript that compiles to plain JavaScript.`,
   },
 ];
 
@@ -27,14 +45,13 @@ export const skills = [
     title: "HTML/CSS",
     value: 90,
   },
-
   {
     title: "REACT JS",
     value: 90,
   },
 
   {
-    title: "MATERIAL UI",
+    title: "MUI 5",
     value: 95,
   },
   {
@@ -56,6 +73,14 @@ export const skills = [
   {
     title: "Socket IO",
     value: 75,
+  },
+  {
+    title: "Typescript",
+    value: 85,
+  },
+  {
+    title: "Webpack/Rollup",
+    value: 70,
   },
 ];
 
@@ -79,9 +104,20 @@ export const education = [
 
 export const experience = [
   {
+    title: "Senior Frontend Dev at Dechains",
+    subTitle: "2021 to current",
+    para: `Role: Senior Frontend Developer, I was responsible for creating whole responsive
+    frontend of various blockchain related apps like NFT Markeplaces etc. While integrating
+    and working on modularized custom libraries for apis and blockchain communication,
+    Libs being compiled with webpack and rollup`,
+  },
+  {
     title: "Frontend Dev at Slectus(US)",
-    subTitle: "2020 to current",
-    para: "Working at a US based startup name Slectus. As remote dev for react frontend development.",
+    subTitle: "2020 to 2021",
+    para: `Multivendor ecommerce style platform with commision support and a complex profile
+    and product management system and realtime features, MERN Stack App.
+    Role: Frontend Developer, responsible for all the frontend work and integrations on the
+    platform, little backend development authorized.`,
   },
   {
     title: "Frontend Dev at Novasoft",
@@ -127,6 +163,17 @@ export const testimonials = [
 ];
 
 export const portfolio = [
+  {
+    titleImg: require("src/Assets/Images/Projects/PetoverseDashboard/1.jpg").default,
+    title: "Petoverse Dashboard",
+    para: `This is a blockchain based dapp for a crypto game called Petoverse.`,
+    link: "https://petoverse-frontend.netlify.app/",
+    imgs: [
+      require("src/Assets/Images/Projects/PetoverseDashboard/1.jpg").default,
+      require("src/Assets/Images/Projects/PetoverseDashboard/2.jpg").default,
+      require("src/Assets/Images/Projects/PetoverseDashboard/3.jpg").default,
+    ],
+  },
   {
     titleImg: require("src/Assets/Images/Projects/Swippy/1.png").default,
     title: "Swippy",

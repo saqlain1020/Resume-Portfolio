@@ -6,6 +6,10 @@ import MySkills from "src/Components/MySkills/MySkills";
 import { motion } from "framer-motion";
 import { services } from "src/Data";
 
+let bth = new Date("24 JAN 2000");
+
+// Calculate the difference in years between two dates
+let diff_years = new Date().getFullYear() - bth.getFullYear();
 const About = () => {
   const classes = useStyles();
 
@@ -33,7 +37,7 @@ const About = () => {
             </Typography>
             <Divider />
             <Typography className={classes.aboutText}>
-              <b>Age:</b> 21 Years
+              <b>Age:</b> {diff_years} Years
             </Typography>
             <Divider />
             <Typography className={classes.aboutText}>

@@ -88,10 +88,10 @@ const ContactIcons = () => {
         <Typography>saqlainprinters@gmail.com</Typography>
       </motion.div>
       <motion.div variants={items} className={`flex ${classes.item}`}>
-        <a href="https://saqlain1020.netlify.app">
+        <a href="https://saqlain1020.com">
           <LanguageIcon className={classes.icon} />
         </a>
-        <Typography>saqlain1020.netlify.app</Typography>
+        <Typography>saqlain1020.com</Typography>
       </motion.div>
     </motion.div>
   );
