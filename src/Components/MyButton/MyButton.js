@@ -36,6 +36,11 @@ const useStyles = makeStyles((theme) => ({
       color: theme.palette.primary.main,
     },
   },
+  disabled:{
+    pointerEvents: "none",
+    opacity: 0.5,
+    filter: "saturate(0.5)",
+  }
 }));
 
 const MyButton = (props) => {
@@ -49,9 +54,9 @@ const MyButton = (props) => {
         stiffness: 260,
         damping: 20,
       }}
-      className={`${
-        props.variant === "contained" ? classes.primaryBtn : classes.outlinedBtn
-      } ${props.className && props.className}`}
+      className={`${props.variant === "contained" ? classes.primaryBtn : classes.outlinedBtn} ${
+        props.className && props.className
+      } ${props.disabled && classes.disabled}`}
     >
       <Typography className={classes.text}>{props.children}</Typography>
     </motion.button>
@@ -59,3 +64,4 @@ const MyButton = (props) => {
 };
 
 export default MyButton;
+

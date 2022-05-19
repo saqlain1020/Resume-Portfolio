@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Grid,
-  makeStyles,
-  TextField,
-  Typography,
-} from "@material-ui/core";
+import { Grid, makeStyles, TextField, Typography } from "@material-ui/core";
 import MyButton from "../MyButton/MyButton";
 import { init, send as sendMail } from "emailjs-com";
 import Alert from "@material-ui/lab/Alert";
@@ -37,6 +32,7 @@ const ContactForm = () => {
     subject: "",
   });
   const [showAlert, setShowAlert] = React.useState(0);
+  const [loading, setLoading] = React.useState(false);
 
   const handleInput = (e) => {
     setState({
@@ -54,10 +50,13 @@ const ContactForm = () => {
     e.preventDefault();
     console.log("submit");
     try {
+      setLoading(true);
       let res = await sendMail("service_7vupatn", "template_fzzvvtg", state);
+      setLoading(false);
       console.log(res);
       alertHandle(1);
     } catch (err) {
+      setLoading(false);
       console.log(err);
       alertHandle(2);
     }
@@ -129,7 +128,7 @@ const ContactForm = () => {
         </Grid>
         <Grid item xs={12}>
           <center>
-            <MyButton variant="contained" className={classes.btn} type="submit">
+            <MyButton disabled={loading} variant="contained" className={classes.btn} type="submit">
               SUBMIT
             </MyButton>
           </center>
@@ -137,24 +136,14 @@ const ContactForm = () => {
         <Grid item xs={12}>
           <AnimatePresence>
             {showAlert === 1 && (
-              <motion.div
-                key="success"
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                exit={{ scale: 0 }}
-              >
+              <motion.div key="success" initial={{ scale: 0 }} animate={{ scale: 1 }} exit={{ scale: 0 }}>
                 <Alert variant="filled" severity="success">
                   Your message sent successfully
                 </Alert>
               </motion.div>
             )}
             {showAlert === 2 && (
-              <motion.div
-                key="error"
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                exit={{ scale: 0 }}
-              >
+              <motion.div key="error" initial={{ scale: 0 }} animate={{ scale: 1 }} exit={{ scale: 0 }}>
                 <Alert variant="filled" severity="error">
                   Error sending message
                 </Alert>
@@ -168,3 +157,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+
