@@ -6,6 +6,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LanguageIcon from "@material-ui/icons/Language";
 import { motion } from "framer-motion";
 import FiverIco from "src/Assets/Icons/FiverrIco";
+import LinkedinIco from "src/Assets/Icons/LinkedinIco";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -57,38 +58,33 @@ const ContactIcons = () => {
   const classes = useStyles();
 
   return (
-    <motion.div
-      variants={container}
-      initial="hidden"
-      animate="visible"
-      className={classes.root}
-    >
+    <motion.div variants={container} initial="hidden" animate="visible" className={classes.root}>
       <motion.div variants={items} className={`flex ${classes.item}`}>
-        <a href="https://github.com/saqlain1020">
+        <a href="https://github.com/saqlain1020" target="_blank">
           <GitHubIcon className={classes.icon} />
         </a>
         <Typography>github.com/saqlain1020</Typography>
       </motion.div>
       <motion.div variants={items} className={`flex ${classes.item}`}>
-        <a href="https://www.fiverr.com/saqlain1020">
-          <FiverIco className={classes.icon} />
+        <a href="https://www.linkedin.com/in/saqlain1020/" target="_blank">
+          <LinkedinIco className={classes.icon} />
         </a>
-        <Typography>fiverr.com/saqlain1020</Typography>
+        <Typography>linkedin.com/in/saqlain1020</Typography>
       </motion.div>
       <motion.div variants={items} className={`flex ${classes.item}`}>
-        <a href="tel:+923000580479">
+        <a href="tel:+923000580479" target="_blank">
           <PhoneIcon className={classes.icon} />
         </a>
         <Typography>+92 300 0580479</Typography>
       </motion.div>
       <motion.div variants={items} className={`flex ${classes.item}`}>
-        <a href="mailto:saqlainprinters@gmail.com">
+        <a href="mailto:saqlainprinters@gmail.com" target="_blank">
           <MailIcon className={classes.icon} />
         </a>
         <Typography>saqlainprinters@gmail.com</Typography>
       </motion.div>
       <motion.div variants={items} className={`flex ${classes.item}`}>
-        <a href="https://saqlain1020.com">
+        <a href="https://saqlain1020.com" target="_blank">
           <LanguageIcon className={classes.icon} />
         </a>
         <Typography>saqlain1020.com</Typography>
@@ -98,3 +94,4 @@ const ContactIcons = () => {
 };
 
 export default ContactIcons;
+
