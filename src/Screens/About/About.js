@@ -33,7 +33,7 @@ const About = () => {
             </Typography>
             <Divider />
             <Typography className={classes.aboutText}>
-              <b>JOB:</b> React Developer
+              <b>JOB:</b> Senior Frontend Developer
             </Typography>
             <Divider />
             <Typography className={classes.aboutText}>

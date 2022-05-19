@@ -27,10 +27,10 @@ const Home = () => {
           Hire the right talent and everything takes care of itself.
         </Typography>
         <Typography className={classes.para}>
-          I'm an experienced developer working on React JS.
+          I'm an experienced developer working on React JS, NodeJS.
           <br />
           Proficient in utilizing modern web techniques and technologies in
-          transforming your ideas to a beautiful web interface.
+          transforming your ideas to a beautiful working web interface.
           <br />
           Always working hard with ambitions which lead to higher grounds.
         </Typography>
