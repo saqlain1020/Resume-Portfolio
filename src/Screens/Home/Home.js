@@ -27,10 +27,10 @@ const Home = () => {
           Hire the right talent and everything takes care of itself.
         </Typography>
         <Typography className={classes.para}>
-          I'm an experienced developer working on React JS, NodeJS.
+          I'm a MERN developer with experience in building web applications.
           <br />
           Proficient in utilizing modern web techniques and technologies in
-          transforming your ideas to a beautiful working web interface.
+          creating MVP products.
           <br />
           Always working hard with ambitions which lead to higher grounds.
         </Typography>

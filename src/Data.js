@@ -38,6 +38,21 @@ export const services = [
     heading: "Typescript",
     description: `Typescript is a strongly typed language a superset of JavaScript that compiles to plain JavaScript.`,
   },
+  // {
+  //   Icon: TypescriptIco,
+  //   heading: "Express",
+  //   description: `Typescript is a strongly typed language a superset of JavaScript that compiles to plain JavaScript.`,
+  // },
+  // {
+  //   Icon: TypescriptIco,
+  //   heading: "Web3/Ethers",
+  //   description: `Typescript is a strongly typed language a superset of JavaScript that compiles to plain JavaScript.`,
+  // },
+  // {
+  //   Icon: TypescriptIco,
+  //   heading: "Redux",
+  //   description: `Typescript is a strongly typed language a superset of JavaScript that compiles to plain JavaScript.`,
+  // },
 ];
 
 export const skills = [
@@ -76,12 +91,36 @@ export const skills = [
   },
   {
     title: "Typescript",
-    value: 85,
+    value: 90,
   },
   {
     title: "Webpack/Rollup",
     value: 70,
   },
+  {
+    title: "React-Native",
+    value: 60,
+  },
+  {
+    title: "CICD Deployments",
+    value:70,
+  },
+  {
+    title: "Elastic Beanstalk",
+    value: 70,
+  },
+  {
+    title: "Azure VM",
+    value: 70,
+  },
+  {
+    title: "Solidity Development",
+    value: 60,
+  },
+  {
+    title: "Etherium Contract Deployment",
+    value: 60,
+  }
 ];
 
 export const education = [
