@@ -38,7 +38,7 @@ const Contact = () => {
         <b>CONTACT ME</b>
       </Typography>
       <Typography color="primary" style={{ marginTop: 5 }}>
-        You can message me to discuss on a project or just to say hi
+        You can message me to discuss or visit my social media profiles.
       </Typography>
       <div className={classes.grid}>
         <div style={{ gridArea: "form" }}>

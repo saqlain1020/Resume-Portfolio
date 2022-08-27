@@ -5,6 +5,9 @@ import FirebaseIco from "./Assets/Icons/FirebaseIco";
 import DeployIco from "./Assets/Icons/DeployIco";
 import TypescriptIco from "./Assets/Icons/TypescriptIco";
 import NodejsIco from "./Assets/Icons/NodejsIco";
+import ExpressIco from "./Assets/Icons/ExpressIco";
+import EthersIco from "./Assets/Icons/EthersIco";
+import SolidityIco from "./Assets/Icons/SolidityIco";
 
 export const services = [
   {
@@ -38,21 +41,21 @@ export const services = [
     heading: "Typescript",
     description: `Typescript is a strongly typed language a superset of JavaScript that compiles to plain JavaScript.`,
   },
-  // {
-  //   Icon: TypescriptIco,
-  //   heading: "Express",
-  //   description: `Typescript is a strongly typed language a superset of JavaScript that compiles to plain JavaScript.`,
-  // },
-  // {
-  //   Icon: TypescriptIco,
-  //   heading: "Web3/Ethers",
-  //   description: `Typescript is a strongly typed language a superset of JavaScript that compiles to plain JavaScript.`,
-  // },
-  // {
-  //   Icon: TypescriptIco,
-  //   heading: "Redux",
-  //   description: `Typescript is a strongly typed language a superset of JavaScript that compiles to plain JavaScript.`,
-  // },
+  {
+    Icon: ExpressIco,
+    heading: "Express",
+    description: `Express, is a back end web application framework for Node.js. It is designed for building web applications and APIs. It is industry standard.`,
+  },
+  {
+    Icon: EthersIco,
+    heading: "Web3/Ethers",
+    description: `The ethers.js library aims to be a complete and compact library for interacting with the Ethereum Blockchain and its ecosystem`,
+  },
+  {
+    Icon: SolidityIco,
+    heading: "Solidity",
+    description: `Solidity is an object-oriented programming language for implementing smart contracts on various blockchain platforms, most notably, Ethereum.`,
+  },
 ];
 
 export const skills = [
@@ -103,7 +106,7 @@ export const skills = [
   },
   {
     title: "CICD Deployments",
-    value:70,
+    value: 70,
   },
   {
     title: "Elastic Beanstalk",
@@ -120,7 +123,7 @@ export const skills = [
   {
     title: "Etherium Contract Deployment",
     value: 60,
-  }
+  },
 ];
 
 export const education = [
@@ -202,6 +205,56 @@ export const testimonials = [
 ];
 
 export const portfolio = [
+  {
+    titleImg: require("src/Assets/Images/Projects/GameAntz/1.jpg").default,
+    title: "GameAntz",
+    para: `GameAntz is a newly conceptualized ecosystem joining crypto descentralized environment with a centralized MMORPG dApp allowing holders to trade in DEX/CEX and battle in private Missions for a prize in tokens (tradable in full once transferred back to wallet)`,
+    link: "https://gameantz.com/",
+    imgs: [
+      require("src/Assets/Images/Projects/GameAntz/1.jpg").default,
+      require("src/Assets/Images/Projects/GameAntz/2.jpg").default,
+      require("src/Assets/Images/Projects/GameAntz/3.jpg").default,
+      require("src/Assets/Images/Projects/GameAntz/4.jpg").default,
+      require("src/Assets/Images/Projects/GameAntz/5.jpg").default,
+      require("src/Assets/Images/Projects/GameAntz/6.jpg").default,
+    ],
+  },
+  {
+    titleImg: require("src/Assets/Images/Projects/Kaito/1.jpg").default,
+    title: "Project Kaito",
+    para: `Anime inspired Nft art.`,
+    link: "https://main.d3bb7dqy819dov.amplifyapp.com",
+    imgs: [
+      require("src/Assets/Images/Projects/Kaito/1.jpg").default,
+      require("src/Assets/Images/Projects/Kaito/2.jpg").default,
+      require("src/Assets/Images/Projects/Kaito/3.jpg").default,
+    ],
+  },
+  {
+    titleImg: require("src/Assets/Images/Projects/Elvantis/1.jpg").default,
+    title: "Elvantis",
+    para: `This is a blockchain based dapp for a crypto game and Nfts for Elvantis.`,
+    imgs: [
+      require("src/Assets/Images/Projects/Elvantis/1.jpg").default,
+      require("src/Assets/Images/Projects/Elvantis/2.jpg").default,
+      require("src/Assets/Images/Projects/Elvantis/3.jpg").default,
+      require("src/Assets/Images/Projects/Elvantis/4.jpg").default,
+      require("src/Assets/Images/Projects/Elvantis/5.jpg").default,
+    ],
+  },
+  {
+    titleImg: require("src/Assets/Images/Projects/Petoverse/1.jpg").default,
+    title: "Petoverse",
+    para: `This is a blockchain based dapp for a crypto game and Nfts for Petoverse.`,
+    link: "https://www.petoverse.io/",
+    imgs: [
+      require("src/Assets/Images/Projects/Petoverse/1.jpg").default,
+      require("src/Assets/Images/Projects/Petoverse/2.jpg").default,
+      require("src/Assets/Images/Projects/Petoverse/3.jpg").default,
+      require("src/Assets/Images/Projects/Petoverse/4.jpg").default,
+      require("src/Assets/Images/Projects/Petoverse/5.jpg").default,
+    ],
+  },
   {
     titleImg: require("src/Assets/Images/Projects/PetoverseDashboard/1.jpg").default,
     title: "Petoverse Dashboard",
@@ -304,8 +357,7 @@ export const portfolio = [
     ],
   },
   {
-    titleImg: require("src/Assets/Images/Projects/RedditRedesign/1.jpg")
-      .default,
+    titleImg: require("src/Assets/Images/Projects/RedditRedesign/1.jpg").default,
     title: "Reddit Redesign",
     para: `This is a fresh take on reddit like web app, Appleaing UI and nested commenting and posting functionality.
     Core technologies used are React-Redux and Firebase with authentication.`,
@@ -345,8 +397,7 @@ export const portfolio = [
     ],
   },
   {
-    titleImg: require("src/Assets/Images/Projects/SaqlainPrinters/1.png")
-      .default,
+    titleImg: require("src/Assets/Images/Projects/SaqlainPrinters/1.png").default,
     title: "Saqlain Printers",
     para: `Website made with pure html/css and pure javascript animations.`,
     link: "https://saqlainprinters.web.app/",
