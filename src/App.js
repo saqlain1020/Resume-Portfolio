@@ -6,7 +6,7 @@ import { ThemeProvider } from "@material-ui/styles";
 import { connect } from "react-redux";
 import ColorBar from "./Components/ColorBar/ColorBar";
 import { useWindowSize } from "src/Hooks/Hooks";
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga4";
 
 const TRACKING_ID = "G-EQ4801JGM0"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
