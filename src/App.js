@@ -21,7 +21,7 @@ function App(props) {
           ...theme,
           palette: {
             ...theme.palette,
-            primary: { main: props.color ? props.color : "rgb(50,50,50)", light: props.lightColor },
+            primary: { main: props.color ? props.color : "#001414", light: props.lightColor?props.lightColor:"#e1e7ed4a" },
           },
         }}
       >
