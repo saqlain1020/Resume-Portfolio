@@ -472,6 +472,7 @@ export const allSkills = [
     skills: [
       "Heroku",
       "Netlify",
+      "Railway",
       "Firebase",
       "Vercel",
       "Elastic Beanstalk",

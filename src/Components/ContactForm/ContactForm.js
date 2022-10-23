@@ -4,6 +4,7 @@ import MyButton from "../MyButton/MyButton";
 import { init, send as sendMail } from "emailjs-com";
 import Alert from "@material-ui/lab/Alert";
 import { AnimatePresence, motion } from "framer-motion";
+import useAnalyticsEventTracker from "src/Hooks/useAnalyticsEventTracker";
 
 const useStyles = makeStyles((theme) => ({
   textHeading: {
@@ -32,6 +33,7 @@ init("user_UfZdGnbnAi6ueK5aTIQxR");
 
 const ContactForm = () => {
   const classes = useStyles();
+  const gaEvenTracker = useAnalyticsEventTracker("Contact Form");
   const [state, setState] = React.useState({
     name: "",
     email: "",
@@ -56,7 +58,9 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("submit");
+
     try {
+      gaEvenTracker("Submit");
       setLoading(true);
       let res = await sendMail("service_7vupatn", "template_fzzvvtg", state);
       setLoading(false);
@@ -85,7 +89,7 @@ const ContactForm = () => {
             required
             className={classes.textField}
             onChange={handleInput}
-            />
+          />
         </Grid>
         <Grid item xs={12} sm={6}>
           <Typography color="textPrimary" className={classes.textHeading}>
@@ -100,7 +104,7 @@ const ContactForm = () => {
             required
             className={classes.textField}
             onChange={handleInput}
-            />
+          />
         </Grid>
         <Grid item xs={12}>
           <Typography color="textPrimary" className={classes.textHeading}>
@@ -114,7 +118,7 @@ const ContactForm = () => {
             fullWidth
             className={classes.textField}
             onChange={handleInput}
-            />
+          />
         </Grid>
         <Grid item xs={12}>
           <Typography color="textPrimary" className={classes.textHeading}>
@@ -131,7 +135,7 @@ const ContactForm = () => {
             required
             className={classes.textField}
             onChange={handleInput}
-            />
+          />
         </Grid>
         <Grid item xs={12}>
           <center>

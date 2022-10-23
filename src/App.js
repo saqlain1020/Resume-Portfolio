@@ -5,12 +5,14 @@ import theme from "src/Theme/Theme";
 import { ThemeProvider } from "@material-ui/styles";
 import { connect } from "react-redux";
 import ColorBar from "./Components/ColorBar/ColorBar";
-import { Container } from "@material-ui/core";
 import { useWindowSize } from "src/Hooks/Hooks";
+import ReactGA from 'react-ga';
+
+const TRACKING_ID = "G-EQ4801JGM0"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 function App(props) {
   const size = useWindowSize();
-  const [count, setCount] = React.useState(0);
 
   return (
     <>

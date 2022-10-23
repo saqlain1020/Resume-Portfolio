@@ -48,18 +48,18 @@ const MySkills = () => {
         I've got really amazing skills
       </Typography>
       {allSkills.map(({ title, skills }) => (
-        <>
+        <React.Fragment key={title}>
           <Typography variant="h6" className={classes.smallHeading}>
             <b>{title}:</b>
           </Typography>
           <Grid container spacing={2} style={{ marginTop: 2 }}>
             {skills.map((name) => (
-              <Grid item>
+              <Grid item key={name}>
                 <div className={classes.chip}><div className={classes.dot}></div>{name}</div>
               </Grid>
             ))}
           </Grid>
-        </>
+        </React.Fragment>
       ))}
 
       {/* <Grid container spacing={4} style={{ marginTop: 20 }}>

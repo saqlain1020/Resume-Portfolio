@@ -7,8 +7,14 @@ import About from "./Screens/About/About";
 import Resume from "./Screens/Resume/Resume";
 import Contact from "./Screens/Contact/Contact";
 import Portfolio from "./Screens/Portfolio/Portfolio";
+import ReactGA from "react-ga";
 
 const Routes = () => {
+  
+  React.useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
     <MainBg>
       <Switch>
