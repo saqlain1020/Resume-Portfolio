@@ -28,18 +28,6 @@ const colors = [
   { color: "#3F51B5", lightColor: "#e1e7ed4a" },
 ];
 
-const lightColors = [
-  "#ede1e14a",
-  "#ede1e84a",
-  "#ede6e14a",
-  "#e1ede94a",
-  "#e3ede14a",
-  "#e1eded4a",
-  "#e1e7ed4a",
-  "#ebe1ed4a",
-  "#e1e7ed4a",
-];
-
 const container = {
   hidden: { opacity: 1, scale: 0 },
   visible: {

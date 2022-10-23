@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
   primaryBtn: {
     background: theme.palette.primary.main,
     padding: "10px 25px",
+    borderRadius:25,
     color: "white",
     display: "inline-block",
     cursor: "pointer",
@@ -18,7 +19,8 @@ const useStyles = makeStyles((theme) => ({
     userSelect: "none",
     outline: "none",
     "&:hover": {
-      boxShadow: "0px 3px 15px rgba(0,0,0,0.3)",
+      // 0px 16px 20px rgb(0 150 136 / 16%)
+      boxShadow: `0px 16px 20px ${theme.palette.primary.main}29`,
     },
   },
   outlinedBtn: {
@@ -31,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
     userSelect: "none",
     outline: "none",
     border: `3px solid transparent`,
+    borderRadius:360,
     "&:hover": {
       border: `3px solid ${theme.palette.primary.main}`,
       color: theme.palette.primary.main,

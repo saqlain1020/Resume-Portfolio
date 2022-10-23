@@ -5,11 +5,13 @@ const useStyles = makeStyles((theme) => ({
   root: {
     padding: 30,
     margin: 10,
-    boxShadow: "0 1px 4px 0 rgb(0 0 0 / 20%)",
+    borderRadius:8,
+    // boxShadow: "0 1px 4px 0 rgb(0 0 0 / 20%)",
+    boxShadow: `0 1px 4px 0 ${theme.palette.primary.main}29`,
     background: "white",
     transition: "all .3s ease",
     "&:hover": {
-      boxShadow: "0 15px 50px 0 rgb(0 0 0 / 14%)",
+      boxShadow: `0 15px 50px 0 ${theme.palette.primary.main}29`,
     },
   },
   heading: {

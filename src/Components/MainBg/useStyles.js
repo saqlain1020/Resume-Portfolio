@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 55,
     position: "absolute",
     padding: 3,
-
+    borderRadius:26,
     [theme.breakpoints.down("sm")]: {
       width: "calc(100% - 80px)",
       height: "calc(100% - 80px)",
@@ -40,6 +40,7 @@ const useStyles = makeStyles((theme) => ({
       left: 40,
     },
     [theme.breakpoints.down("xs")]: {
+      borderRadius:0,
       width: "calc(100% - 10px)",
       height: "calc(100% - 10px)",
       top: 5,

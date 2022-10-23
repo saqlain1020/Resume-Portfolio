@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     flexFlow: "column",
-    zIndex:100,
+    zIndex: 100,
   },
   color: {
     width: 5,
@@ -22,7 +22,9 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "0px 0px 10px rgba(0,0,0,0.3)",
     background: theme.palette.primary.main,
     "&:hover": {
-      width: 30,
+      width: 40,
+      borderTopRightRadius: 5,
+      borderBottomRightRadius: 5,
     },
   },
   colorMenu: {
@@ -35,6 +37,8 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "0px 0px 10px rgba(0,0,0,0.3)",
     background: theme.palette.primary.main,
     color: "white",
+    borderTopRightRadius: 5,
+    borderBottomRightRadius: 5,
   },
 }));
 

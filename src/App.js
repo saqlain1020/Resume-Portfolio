@@ -23,10 +23,10 @@ function App(props) {
           },
         }}
       >
-        <Container maxWidth="xl" disableGutters style={{ position: "relative", maxHeight: 1080, height: size.height }}>
+        <div style={{ position: "relative", maxHeight: "auto", height: size.height }}>
           <Routes />
           <ColorBar />
-        </Container>
+        </div>
       </ThemeProvider>
     </>
   );
