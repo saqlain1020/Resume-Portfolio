@@ -206,6 +206,19 @@ export const testimonials = [
 
 export const portfolio = [
   {
+    titleImg: require("src/Assets/Images/Projects/FroggoDashboard/1.jpg").default,
+    title: "Mutant Froggo Dashboard",
+    para: `A Complete dApp with minting and Nfts management system, with a complete dashboard. Ethers Smart Contracts and React Queries with The Graph.`,
+    link: "https://www.dashboard.mutantfroggo.com",
+    imgs: [
+      require("src/Assets/Images/Projects/FroggoDashboard/1.jpg").default,
+      require("src/Assets/Images/Projects/FroggoDashboard/2.jpg").default,
+      require("src/Assets/Images/Projects/FroggoDashboard/3.jpg").default,
+      require("src/Assets/Images/Projects/FroggoDashboard/4.jpg").default,
+      require("src/Assets/Images/Projects/FroggoDashboard/5.jpg").default,
+    ],
+  },
+  {
     titleImg: require("src/Assets/Images/Projects/GameAntz/1.jpg").default,
     title: "GameAntz",
     para: `GameAntz is a newly conceptualized ecosystem joining crypto descentralized environment with a centralized MMORPG dApp allowing holders to trade in DEX/CEX and battle in private Missions for a prize in tokens (tradable in full once transferred back to wallet)`,
@@ -491,6 +504,6 @@ export const allSkills = [
   },
   {
     title: "Other",
-    skills: ["Java", "C#", "MySQL", "Jira", "Trello", "Discord", "Adobe Photoshop", "Adobe Illustrator"],
+    skills: ["Java", "C#", "MySQL", "Jira", "Trello", "Discord", "Adobe Photoshop", "Adobe Illustrator","Decentralized Apps"],
   },
 ];
