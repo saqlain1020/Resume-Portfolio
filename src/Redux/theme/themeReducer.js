@@ -1,7 +1,7 @@
 import { SET_THEME } from "./themeConstants";
 
 const initialState = {
-    color: "rgb(0,20,20)",
+    color: "#001414",
     lightColor: "#e1e7ed4a"
 };
 
