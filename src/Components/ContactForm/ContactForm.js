@@ -7,11 +7,18 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const useStyles = makeStyles((theme) => ({
   textHeading: {
-    paddingLeft: 8,
+    paddingLeft: 5,
     marginTop: 10,
     marginBottom: 4,
+    color: "#717171",
+    fontWeight: 600,
     [theme.breakpoints.down("xs")]: {
       marginTop: 5,
+    },
+  },
+  textField: {
+    "& div": {
+      background: theme.palette.primary.light,
     },
   },
   btn: {
@@ -67,7 +74,7 @@ const ContactForm = () => {
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6}>
           <Typography color="textPrimary" className={classes.textHeading}>
-            <b>Name:</b>
+            Name:
           </Typography>
           <TextField
             name="name"
@@ -75,14 +82,14 @@ const ContactForm = () => {
             value={state.name}
             variant="outlined"
             fullWidth
-            placeholder="Name"
             required
+            className={classes.textField}
             onChange={handleInput}
-          />
+            />
         </Grid>
         <Grid item xs={12} sm={6}>
           <Typography color="textPrimary" className={classes.textHeading}>
-            <b>Email:</b>
+            Email:
           </Typography>
           <TextField
             name="email"
@@ -90,14 +97,14 @@ const ContactForm = () => {
             value={state.email}
             variant="outlined"
             fullWidth
-            placeholder="Email"
             required
+            className={classes.textField}
             onChange={handleInput}
-          />
+            />
         </Grid>
         <Grid item xs={12}>
           <Typography color="textPrimary" className={classes.textHeading}>
-            <b>Subject:</b>
+            Subject:
           </Typography>
           <TextField
             name="subject"
@@ -105,13 +112,13 @@ const ContactForm = () => {
             value={state.subject}
             variant="outlined"
             fullWidth
-            placeholder="Subject"
+            className={classes.textField}
             onChange={handleInput}
-          />
+            />
         </Grid>
         <Grid item xs={12}>
           <Typography color="textPrimary" className={classes.textHeading}>
-            <b>Message:</b>
+            Message:
           </Typography>
           <TextField
             name="message"
@@ -121,10 +128,10 @@ const ContactForm = () => {
             fullWidth
             multiline
             rows={6}
-            placeholder="Message"
             required
+            className={classes.textField}
             onChange={handleInput}
-          />
+            />
         </Grid>
         <Grid item xs={12}>
           <center>
@@ -157,4 +164,3 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-

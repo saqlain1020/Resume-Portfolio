@@ -39,14 +39,18 @@ const theme = createMuiTheme({
     },
     MuiOutlinedInput: {
       root: {
-        background: "white",
-        borderRadius: 7,
+        background: "#e1e7ed4a",
+        borderRadius: 30,
+        fontSize:14,
+        letterSpacing:1,
+        fontWeight:500,
+        color: "grey",
         "& fieldset": {
           borderWidth: "0px !important",
         },
       },
       notchedOutline: {
-        boxShadow: "0 0 10px rgb(0 0 0 / 10%)",
+        // boxShadow: "0 0 10px rgb(0 0 0 / 10%)",
       },
     },
   },

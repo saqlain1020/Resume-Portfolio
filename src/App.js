@@ -19,15 +19,11 @@ function App(props) {
           ...theme,
           palette: {
             ...theme.palette,
-            primary: { main: props.color ? props.color : "rgb(50,50,50)" },
+            primary: { main: props.color ? props.color : "rgb(50,50,50)", light: props.lightColor },
           },
         }}
       >
-        <Container
-          maxWidth="xl"
-          disableGutters
-          style={{ position: "relative", maxHeight: 1080, height: size.height }}
-        >
+        <Container maxWidth="xl" disableGutters style={{ position: "relative", maxHeight: 1080, height: size.height }}>
           <Routes />
           <ColorBar />
         </Container>
@@ -38,6 +34,7 @@ function App(props) {
 
 const mapState = (state) => ({
   color: state.theme.color,
+  lightColor: state.theme.lightColor,
 });
 
 export default connect(mapState)(App);

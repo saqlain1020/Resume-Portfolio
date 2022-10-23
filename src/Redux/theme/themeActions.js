@@ -1,8 +1,9 @@
 import { SET_THEME } from "./themeConstants";
 
-export const setTheme = (theme) => ({
+export const setTheme = ({ color, lightColor }) => ({
   type: SET_THEME,
   payload: {
-    theme,
+    color,
+    lightColor,
   },
 });

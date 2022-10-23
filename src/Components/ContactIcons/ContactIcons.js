@@ -22,12 +22,14 @@ const useStyles = makeStyles((theme) => ({
     width: 50,
     padding: 10,
     background: "white",
-    boxShadow: "0px 0px 10px rgba(0,0,0,0.1)",
+    // boxShadow: "0px 0px 10px rgba(0,0,0,0.1)",
+    boxShadow: "0px 0px 35px rgb(0 0 0 / 5%)",
     borderRadius: 360,
     marginRight: 10,
     transition: "all 200ms",
     "&:hover": {
-      boxShadow: "0px 0px 15px rgba(0,0,0,0.2)",
+      boxShadow: "0px 0px 34px rgb(0 0 0 / 15%)",
+      // boxShadow: "0px 0px 15px rgba(0,0,0,0.2)",
     },
   },
   item: {

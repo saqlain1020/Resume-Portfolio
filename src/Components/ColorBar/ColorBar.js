@@ -17,16 +17,29 @@ const items = {
 };
 
 const colors = [
-  "#F44336",
-  "#FF4081",
-  "#FF5722",
-  "#009688",
-  "#4CAF50",
-  "#00BCD4",
-  "#2196F3",
-  "#9C27B0",
-  "#3F51B5",
+  { color: "#F44336", lightColor: "ede1e14a" },
+  { color: "#FF4081", lightColor: "#ede1e84a" },
+  { color: "#FF5722", lightColor: "#ede6e14a" },
+  { color: "#009688", lightColor: "#e1ede94a" },
+  { color: "#4CAF50", lightColor: "#e3ede14a" },
+  { color: "#00BCD4", lightColor: "#e1eded4a" },
+  { color: "#2196F3", lightColor: "#e1e7ed4a" },
+  { color: "#9C27B0", lightColor: "#ebe1ed4a" },
+  { color: "#3F51B5", lightColor: "#e1e7ed4a" },
 ];
+
+const lightColors = [
+  "#ede1e14a",
+  "#ede1e84a",
+  "#ede6e14a",
+  "#e1ede94a",
+  "#e3ede14a",
+  "#e1eded4a",
+  "#e1e7ed4a",
+  "#ebe1ed4a",
+  "#e1e7ed4a",
+];
+
 const container = {
   hidden: { opacity: 1, scale: 0 },
   visible: {
@@ -57,12 +70,7 @@ const ColorBar = ({ setTheme, ...restProps }) => {
   };
 
   return (
-    <motion.div
-      variants={container}
-      initial="hidden"
-      animate="visible"
-      className={classes.root}
-    >
+    <motion.div variants={container} initial="hidden" animate="visible" className={classes.root}>
       <motion.div className={classes.colorMenu}>
         <motion.div
           whileTap={{
@@ -93,7 +101,7 @@ const ColorBar = ({ setTheme, ...restProps }) => {
           variants={items}
           key={index}
           className={classes.color}
-          style={{ background: item }}
+          style={{ background: item.color }}
           onClick={() => setTheme(item)}
         />
       ))}
