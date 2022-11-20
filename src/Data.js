@@ -457,7 +457,7 @@ export const allSkills = [
       "React JS",
       "Next JS",
       "Redux",
-      "Readux Toolkit",
+      "Redux Toolkit",
       "React Router",
       "Module CSS",
       "MUI",
@@ -478,7 +478,7 @@ export const allSkills = [
   },
   {
     title: "Blockchain",
-    skills: ["Solidity", "Ethers JS", "Hardhat", "Moralis", "Ganache", "Infuria", "The Graph"],
+    skills: ["Solidity", "Ethers JS", "Hardhat", "Moralis", "Ganache", "Infura", "The Graph"],
   },
   {
     title: "DevOps",
