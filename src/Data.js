@@ -478,7 +478,7 @@ export const allSkills = [
   },
   {
     title: "Blockchain",
-    skills: ["Solidity", "Ethers JS", "Hardhat", "Moralis", "Ganache", "Infura", "The Graph"],
+    skills: ["Solidity", "Ethers JS", "Hardhat", "Moralis", "Ganache", "Infura", "The Graph", "Web3Auth"],
   },
   {
     title: "DevOps",
