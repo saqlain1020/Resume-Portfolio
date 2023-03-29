@@ -90,7 +90,7 @@ export const skills = [
   },
   {
     title: "Socket IO",
-    value: 75,
+    value: 80,
   },
   {
     title: "Typescript",
@@ -98,7 +98,7 @@ export const skills = [
   },
   {
     title: "Webpack/Rollup",
-    value: 70,
+    value: 80,
   },
   {
     title: "React-Native",
@@ -106,11 +106,11 @@ export const skills = [
   },
   {
     title: "CICD Deployments",
-    value: 70,
+    value: 80,
   },
   {
     title: "Elastic Beanstalk",
-    value: 70,
+    value: 80,
   },
   {
     title: "Azure VM",
@@ -118,11 +118,15 @@ export const skills = [
   },
   {
     title: "Solidity Development",
-    value: 60,
+    value: 70,
   },
   {
     title: "Etherium Contract Deployment",
     value: 60,
+  },
+  {
+    title: "Subgraph",
+    value: 90,
   },
 ];
 
@@ -495,7 +499,7 @@ export const allSkills = [
   },
   {
     title: "Blockchain",
-    skills: ["Solidity", "Ethers JS", "Hardhat", "Moralis", "Ganache", "Infura", "The Graph", "Web3Auth"],
+    skills: ["Solidity", "Ethers JS", "Hardhat", "Moralis", "Ganache", "Infura", "The Graph", "Web3Auth", "Subgraph"],
   },
   {
     title: "DevOps",
@@ -521,6 +525,6 @@ export const allSkills = [
   },
   {
     title: "Other",
-    skills: ["Java", "C#", "MySQL", "Jira", "Trello", "Discord", "Adobe Photoshop", "Adobe Illustrator","Decentralized Apps"],
+    skills: ["Java", "C#", "MySQL", "Jira", "Trello", "Discord", "Asana", "Adobe Photoshop", "Adobe Illustrator","Decentralized Apps"],
   },
 ];
