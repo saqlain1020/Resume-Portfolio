@@ -206,6 +206,23 @@ export const testimonials = [
 
 export const portfolio = [
   {
+    titleImg: require("src/Assets/Images/Projects/Contrax/1.jpg").default,
+    title: "Contrax Finance",
+    para: `Non custodial crypto yield farming aggregator platform with eth zapping and social logins, With extra features like swapping onramp offramp bridges and more... Built with React JS, Web3/Ethers, Subgraph, Solidity, Webpack, Typescript, CICD Deployments, Etherium Smart Contracts, 3rd Party APIs, etc...`,
+    link: "https://beta.contrax.finance",
+    imgs: [
+      require("src/Assets/Images/Projects/Contrax/1.jpg").default,
+      require("src/Assets/Images/Projects/Contrax/2.jpg").default,
+      require("src/Assets/Images/Projects/Contrax/3.jpg").default,
+      require("src/Assets/Images/Projects/Contrax/4.jpg").default,
+      require("src/Assets/Images/Projects/Contrax/5.jpg").default,
+      require("src/Assets/Images/Projects/Contrax/6.jpg").default,
+      require("src/Assets/Images/Projects/Contrax/7.jpg").default,
+      require("src/Assets/Images/Projects/Contrax/8.jpg").default,
+      require("src/Assets/Images/Projects/Contrax/9.jpg").default,
+    ],
+  },
+  {
     titleImg: require("src/Assets/Images/Projects/FroggoDashboard/1.jpg").default,
     title: "Mutant Froggo Dashboard",
     para: `A Complete dApp with minting and Nfts management system, with a complete dashboard. Ethers Smart Contracts and React Queries with The Graph.`,
