@@ -227,6 +227,19 @@ export const portfolio = [
     ],
   },
   {
+    titleImg: require("src/Assets/Images/Projects/Chailabs/1.jpg").default,
+    title: "Chailabs",
+    para: `A decentralized chat app with communities and DAOs, having proposals with onchain and offchain decentralized organizations.`,
+    link: "https://chailabs-chat.vercel.app",
+    imgs: [
+      require("src/Assets/Images/Projects/Chailabs/1.jpg").default,
+      require("src/Assets/Images/Projects/Chailabs/2.jpg").default,
+      require("src/Assets/Images/Projects/Chailabs/3.jpg").default,
+      require("src/Assets/Images/Projects/Chailabs/4.jpg").default,
+      require("src/Assets/Images/Projects/Chailabs/5.jpg").default,
+    ],
+  },
+  {
     titleImg: require("src/Assets/Images/Projects/FroggoDashboard/1.jpg").default,
     title: "Mutant Froggo Dashboard",
     para: `A Complete dApp with minting and Nfts management system, with a complete dashboard. Ethers Smart Contracts and React Queries with The Graph.`,
