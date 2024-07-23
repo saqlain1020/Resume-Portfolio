@@ -210,6 +210,23 @@ export const testimonials = [
 
 export const portfolio = [
   {
+    titleImg: require("src/Assets/Images/Projects/PmpyWalletExtension/1.jpg").default,
+    title: "Pmpy Chrome/Mobile Defi Wallet",
+    para: `Non custodial crypto ethereum wallet chrome extension, competitor of Metamask. Full functionality with creating wallets to importing seeds, sending, receiving, and more with ability to connect with dApps.Chrome Extension as well as cross platform react native mobile app.`,
+    imgs: [
+      require("src/Assets/Images/Projects/PmpyWalletExtension/1.jpg").default,
+      require("src/Assets/Images/Projects/PmpyWalletExtension/2.jpg").default,
+      require("src/Assets/Images/Projects/PmpyWalletExtension/3.jpg").default,
+      require("src/Assets/Images/Projects/PmpyWalletExtension/4.jpg").default,
+      require("src/Assets/Images/Projects/PmpyWalletExtension/5.jpg").default,
+      require("src/Assets/Images/Projects/PmpyWalletExtension/6.jpg").default,
+      require("src/Assets/Images/Projects/PmpyWalletExtension/7.jpg").default,
+      require("src/Assets/Images/Projects/PmpyWalletExtension/8.jpg").default,
+      require("src/Assets/Images/Projects/PmpyWalletExtension/9.jpg").default,
+      require("src/Assets/Images/Projects/PmpyWalletExtension/10.jpg").default,
+    ],
+  },
+  {
     titleImg: require("src/Assets/Images/Projects/Contrax/1.jpg").default,
     title: "Contrax Finance",
     para: `Non custodial crypto yield farming aggregator platform with eth zapping and social logins, With extra features like swapping onramp offramp bridges and more... Built with React JS, Web3/Ethers, Subgraph, Solidity, Webpack, Typescript, CICD Deployments, Etherium Smart Contracts, 3rd Party APIs, etc...`,
@@ -538,6 +555,17 @@ export const allSkills = [
   },
   {
     title: "Other",
-    skills: ["Java", "C#", "MySQL", "Jira", "Trello", "Discord", "Asana", "Adobe Photoshop", "Adobe Illustrator","Decentralized Apps"],
+    skills: [
+      "Java",
+      "C#",
+      "MySQL",
+      "Jira",
+      "Trello",
+      "Discord",
+      "Asana",
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Decentralized Apps",
+    ],
   },
 ];
