@@ -14,11 +14,7 @@ const About = () => {
   const classes = useStyles();
 
   return (
-    <motion.div
-      className={classes.root}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-    >
+    <motion.div className={classes.root} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       <Typography variant="h4">
         <b>ABOUT ME</b>
       </Typography>
@@ -33,7 +29,7 @@ const About = () => {
             </Typography>
             <Divider />
             <Typography className={classes.aboutText}>
-              <b>JOB:</b> Senior Frontend Developer
+              <b>JOB:</b> Fullstack Web3 Developer
             </Typography>
             <Divider />
             <Typography className={classes.aboutText}>
@@ -48,14 +44,13 @@ const About = () => {
         </Grid>
         <Grid item xs={12} md={8}>
           <Typography className={classes.aboutPara}>
-            I’m Saqlain an ambitious problem solver with a passion for learning
-            and implementing new solutions, and who like to be in party of
-            like-minded developers. Experienced in creating logical and
-            innovative solutions to complex problems.
+            I'm Saqlain an ambitious problem solver with a passion for learning and implementing new solutions, and who
+            like to be in party of like-minded developers. Experienced in creating logical and innovative solutions to
+            complex problems.
             <br />
             <br />
-            My goal is to climb the ladder and become one of the leading experts
-            in my field, who want's to be a part of something bigger.
+            My goal is to climb the ladder and become one of the leading experts in my field, who want's to be a part of
+            something bigger.
           </Typography>
         </Grid>
       </Grid>

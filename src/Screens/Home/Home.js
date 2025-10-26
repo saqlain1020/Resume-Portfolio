@@ -27,12 +27,12 @@ const Home = () => {
           Hire the right talent and everything takes care of itself.
         </Typography>
         <Typography className={classes.para}>
-          I'm a MERN developer with experience in building web applications.
+          Fullstack Web3 developer crafting intelligent Web solutions and Web3 apps.
           <br />
-          Proficient in utilizing modern web techniques and technologies in
-          creating MVP products.
+          Building omnichain protocols, smart contracts, and full-stack dApps that redefine decentralized experiences
+          along with AI development.
           <br />
-          Always working hard with ambitions which lead to higher grounds.
+          Transforming cutting-edge tech into scalable, production-ready applications.
         </Typography>
         <Grid container spacing={2} style={{ marginTop: 20 }}>
           <Grid item>

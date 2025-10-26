@@ -8,13 +8,16 @@ import NodejsIco from "./Assets/Icons/NodejsIco";
 import ExpressIco from "./Assets/Icons/ExpressIco";
 import EthersIco from "./Assets/Icons/EthersIco";
 import SolidityIco from "./Assets/Icons/SolidityIco";
+import NestjsIco from "./Assets/Icons/NestjsIco";
+import GeminiIco from "./Assets/Icons/GeminiIco";
+import TailwindIco from "./Assets/Icons/TailwindIco";
 
 export const services = [
   {
     Icon: ReactIco,
     heading: "REACT JS",
-    description: `ReactJS allows us to build dynamic and interactive web apps with ease. It’s fast, scalable, flexible, powerful, 
-     and has a robust developer community that’s rapidly growing.`,
+    description: `ReactJS allows us to build dynamic and interactive web apps with ease. It's fast, scalable, flexible, powerful, 
+     and has a robust developer community that's rapidly growing.`,
   },
   {
     Icon: MuiIco,
@@ -22,9 +25,19 @@ export const services = [
     description: `Material-UI is a simple and customizable component library to build faster, beautiful, and more accessible React applications.`,
   },
   {
+    Icon: TailwindIco,
+    heading: "Tailwind CSS",
+    description: `Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces.`,
+  },
+  {
     Icon: NodejsIco,
     heading: "Node JS",
     description: `Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.`,
+  },
+  {
+    Icon: NestjsIco,
+    heading: "Nest JS",
+    description: `NestJS is a framework for building server-side applications. It is built on top of Node.js and Express.js and is a great choice for building scalable and maintainable applications.`,
   },
   {
     Icon: FirebaseIco,
@@ -34,7 +47,7 @@ export const services = [
   {
     Icon: DeployIco,
     heading: "DEPLOYMENT",
-    description: `Deploy Apps to Netlify, Heroku, Firebase, AWS, Vercel and more.`,
+    description: `Deploy Apps to Gcloud, FlyIO, AWS, Vercel, Netlify, Heroku, Firebase and more.`,
   },
   {
     Icon: TypescriptIco,
@@ -48,13 +61,18 @@ export const services = [
   },
   {
     Icon: EthersIco,
-    heading: "Web3/Ethers",
-    description: `The ethers.js library aims to be a complete and compact library for interacting with the Ethereum Blockchain and its ecosystem`,
+    heading: "Viem/Ethers",
+    description: `The viem and ethers.js library aims to be a complete and compact library for interacting with the Ethereum Blockchain and its ecosystem`,
   },
   {
     Icon: SolidityIco,
     heading: "Solidity",
     description: `Solidity is an object-oriented programming language for implementing smart contracts on various blockchain platforms, most notably, Ethereum.`,
+  },
+  {
+    Icon: GeminiIco,
+    heading: "Google Agent Development Kit",
+    description: `The Google Agent Development Kit is a tool for developing and deploying agentic applications.`,
   },
 ];
 
@@ -537,6 +555,7 @@ export const allSkills = [
       "CSS",
       "Javascript",
       "Typescript",
+      "Tailwind",
       "React JS",
       "Next JS",
       "Redux",
@@ -547,30 +566,62 @@ export const allSkills = [
       "SocketIO",
       "Framer Motion",
       "Formik",
-      "React Recoil",
       "React Query",
       "React Spring",
       "React Native",
       "Expo",
       "Webpack",
+      "WXT Chrome Extension",
     ],
   },
   {
     title: "Backend",
-    skills: ["Node JS", "Express JS", "Firebase", "MongoDB", "Mongoose", "SocketIO", "REST API", "JWT"],
+    skills: [
+      "Node JS",
+      "Nest JS",
+      "BullMQ",
+      "Express JS",
+      "MongoDB",
+      "PostgreSQL",
+      "Passport JS",
+      "Firebase",
+      "Mongoose",
+      "SocketIO",
+      "REST API",
+      "JWT",
+    ],
   },
   {
     title: "Blockchain",
-    skills: ["Solidity", "Ethers JS", "Hardhat", "Moralis", "Ganache", "Infura", "The Graph", "Web3Auth", "Subgraph"],
+    skills: [
+      "Solidity",
+      "Viem",
+      "Ethers JS",
+      "Hardhat",
+      "Smart Accounts",
+      "Moralis",
+      "LayerZero",
+      "Infura",
+      "The Graph",
+      "Web3Auth",
+      "ZeroDev",
+      "Subgraph",
+    ],
+  },
+  {
+    title: "AI",
+    skills: ["Google Agent Development Kit", "Python"],
   },
   {
     title: "DevOps",
     skills: [
+      "FlyIO",
       "Heroku",
       "Netlify",
       "Railway",
       "Firebase",
       "Vercel",
+      "Gcloud Basics",
       "Elastic Beanstalk",
       "Aws CodePipeline",
       "Aws Codebuild",
@@ -587,17 +638,6 @@ export const allSkills = [
   },
   {
     title: "Other",
-    skills: [
-      "Java",
-      "C#",
-      "MySQL",
-      "Jira",
-      "Trello",
-      "Discord",
-      "Asana",
-      "Adobe Photoshop",
-      "Adobe Illustrator",
-      "Decentralized Apps",
-    ],
+    skills: ["Java", "C#", "MySQL", "Jira", "Trello", "Discord", "Asana", "Adobe Photoshop", "Adobe Illustrator"],
   },
 ];
