@@ -67,7 +67,14 @@ export const skills = [
     title: "REACT JS",
     value: 90,
   },
-
+  {
+    title: "Google Agent Development Kit",
+    value: 90,
+  },
+  {
+    title: "Tailwind",
+    value: 80,
+  },
   {
     title: "MUI 5",
     value: 95,
@@ -101,11 +108,15 @@ export const skills = [
     value: 80,
   },
   {
-    title: "React-Native",
-    value: 60,
+    title: "Chrome Extension Development",
+    value: 80,
   },
   {
     title: "CICD Deployments",
+    value: 80,
+  },
+  {
+    title: "Gcloud Basics",
     value: 80,
   },
   {
@@ -122,7 +133,7 @@ export const skills = [
   },
   {
     title: "Etherium Contract Deployment",
-    value: 60,
+    value: 80,
   },
   {
     title: "Subgraph",
@@ -133,7 +144,7 @@ export const skills = [
 export const education = [
   {
     title: "University of Karachi",
-    subTitle: "BS:SE - 2019 to current",
+    subTitle: "BS:SE - 2019 to 2023",
     para: "Bachelors in Software Engineering from UBIT Karachi University.",
   },
   {
@@ -150,8 +161,15 @@ export const education = [
 
 export const experience = [
   {
+    title: "Fullstack Web3 Developer at Permission",
+    subTitle: "2025 to current",
+    para: `Role: Fullstack Web3 Developer, I am responsible for developing and maintaining the entire web3 featureset for Permission including but not
+    limited to LayerZero Omni Chain Token, Web3 Withdrawal Service, and more.
+    While working with the UI, Backend, Extension and Ai Development (GOOGLE ADK) on various applications for Permission.`,
+  },
+  {
     title: "Senior Frontend Dev at Dechains",
-    subTitle: "2021 to current",
+    subTitle: "2021 to 2024",
     para: `Role: Senior Frontend Developer, I was responsible for creating whole responsive
     frontend of various blockchain related apps like NFT Markeplaces etc. While integrating
     and working on modularized custom libraries for apis and blockchain communication,
@@ -209,6 +227,20 @@ export const testimonials = [
 ];
 
 export const portfolio = [
+  {
+    titleImg: require("src/Assets/Images/Projects/PitchFi/1.jpg").default,
+    title: "PitchFi",
+    para: `PitchFi is a platform for crowdfunding projects with crypto and fiat support. Unlimited Campaigns and milestones with multi token mutichain support.`,
+    link: "https://pitchfi.io",
+    imgs: [
+      require("src/Assets/Images/Projects/PitchFi/1.jpg").default,
+      require("src/Assets/Images/Projects/PitchFi/2.jpg").default,
+      require("src/Assets/Images/Projects/PitchFi/3.jpg").default,
+      require("src/Assets/Images/Projects/PitchFi/4.jpg").default,
+      require("src/Assets/Images/Projects/PitchFi/5.jpg").default,
+      require("src/Assets/Images/Projects/PitchFi/6.jpg").default,
+    ],
+  },
   {
     titleImg: require("src/Assets/Images/Projects/PmpyWalletExtension/1.jpg").default,
     title: "Pmpy Chrome/Mobile Defi Wallet",
